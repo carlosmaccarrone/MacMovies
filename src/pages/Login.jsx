@@ -1,5 +1,4 @@
-import React from 'react';
-import UserList from '../components/UserList.js';
+import UserList from '../components/UserList';
 import styles from './Login.module.css';
 
 export default function Login() {
