@@ -13,3 +13,5 @@
 
 # Treat JPG files as binary to avoid merge conflicts and line ending changes
 *.jpg binary
+*.png binary
+*.svg binary

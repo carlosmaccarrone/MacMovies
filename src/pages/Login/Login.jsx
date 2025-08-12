@@ -1,4 +1,4 @@
-import UserList from '../components/UserList';
+import UserList from './UserList';
 import styles from './Login.module.css';
 
 export default function Login() {
