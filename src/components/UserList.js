@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import styles from './UserList.module.css';
 
 function UserList() {
   const [users, setUsers] = useState([]);
@@ -22,17 +23,17 @@ function UserList() {
   }, []);
 
   return (
-    <div style={{padding: '1rem', borderRight: '1px solid #ccc', height: '100vh', overflowY: 'auto', width: '250px'}}>
+    <div className={styles.userlistContainer}>
       <h3>Demo users</h3>
-      <table style={{width: '100%', borderCollapse: 'collapse'}}>
+      <table>
         <thead>
           <tr>
-            <th style={{textAlign: 'left'}}>Username</th>
-            <th style={{textAlign: 'left'}}>Password</th>
+            <th>Username</th>
+            <th>Password</th>
           </tr>
         </thead>
         <tbody>
-          {users.map(({username, password}) => (
+          {users.map(({ username, password }) => (
             <tr key={username}>
               <td>{username}</td>
               <td>{password}</td>

@@ -1,0 +1,35 @@
+.userlistContainer {
+  background-color: #ff8c00; /* naranja */
+  border-radius: 12px;
+  padding: 1rem;
+  width: 250px;
+  height: 100vh;
+  overflow-y: auto;
+  box-sizing: border-box;
+  border: 2px solid #e07b00; /* borde más oscuro */
+  color: white;
+}
+
+.userlistContainer h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.userlistContainer table {
+  width: 100%;
+  border-collapse: collapse;
+  color: white;
+}
+
+.userlistContainer th,
+.userlistContainer td {
+  text-align: left;
+  padding: 6px 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.userlistContainer th {
+  font-weight: 600;
+  border-bottom: 2px solid white;
+}
