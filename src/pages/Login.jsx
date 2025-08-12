@@ -1,14 +1,15 @@
 import React from 'react';
 import UserList from '../components/UserList.js';
+import styles from './Login.module.css';
 
 export default function Login() {
   return (
-    <div style={{ display: 'flex', height: '100vh' }}>
-      <div style={{ flex: 1, padding: '20px', borderRight: '1px solid #ccc' }}>
+    <div className={styles.loginContainer}>
+      <div className={styles.userlistWrapper}>
         <UserList />
       </div>
-      <div style={{ flex: 2, padding: '20px' }}>
-        {/* Aquí luego pondremos el formulario Login */}
+      <div className={styles.loginFormWrapper}>
+        {/* Here we will then put the Login form */}
         <h2>Login Form Goes Here</h2>
       </div>
     </div>
