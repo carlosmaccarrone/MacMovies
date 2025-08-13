@@ -1,5 +1,25 @@
 .logo {
-  width: 150px;
+  width: 150px; /* tamaño default */
   height: auto;
   display: block;
+  margin: 0 auto;
+}
+
+.small {
+  width: 100px;
+}
+
+.medium {
+  width: 150px;
+}
+
+.large {
+  width: 260px;
+}
+
+
+@media (max-width: 768px) {
+  .large {
+    width: 260px; /* más chico en móvil */
+  }
 }
