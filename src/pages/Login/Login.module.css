@@ -3,17 +3,21 @@
   height: 100vh;
   flex-direction: row;
   align-items: center;
+  padding: 1rem;
+  box-sizing: border-box; /* that the padding does not increase in size */
+  overflow: hidden; /* avoid scrolling */
 }
 
-.userlistWrapper {
-  flex: 1;
-  padding: 20px;
-  border-right: 1px solid #ccc;
+.sidebarWrapper {
+  flex: 5; /* increase the flex to take up more space */
+  padding: 20px 10px; /* a little more side padding */
+  order: 1; /* desktop: 1 */
 }
 
 .loginFormWrapper {
-  flex: 2;
+  flex: 4;
   padding: 20px;
+  order: 2; /* desktop: 2 */
 }
 
 /* Media query for small screens */
@@ -21,18 +25,26 @@
   .loginContainer {
     flex-direction: column;
     height: auto; /* so that it grows with the content */
-  }
-
-  .userlistWrapper {
-    width: 100%;
-    border-right: none;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
+    padding-top: 0;  /* <--- key to remove space above */
+    padding-bottom: 0; /* opcional */
+    align-items: center;
+    gap: 1rem;
+    padding: 0;
   }
 
   .loginFormWrapper {
+    order: 1; /* mobile-first LoginForm */
     width: 100%;
-    padding-top: 10px;
+    flex: 0 1 400px; /* flex-grow: 0 (doesn't grow beyond 400px) flex-shrink: 1 (can be shrunk if necessary) flex-basis: 400px (initial size) */
+    overflow: hidden;
+  }
+
+  .sidebarWrapper {
+    order: 2; /* mobile: after UserList */
+    width: 100%;
+    max-width: 600px;
+    padding: 10px 20px;
+    padding-bottom: 3rem;
+    box-sizing: border-box;
   }
 }

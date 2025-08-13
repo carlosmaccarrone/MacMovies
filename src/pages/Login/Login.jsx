@@ -1,15 +1,15 @@
-import UserList from './UserList';
+import LoginSidebar from './LoginSidebar';
 import styles from './Login.module.css';
+import LoginForm from './LoginForm';
 
 export default function Login() {
   return (
     <div className={styles.loginContainer}>
-      <div className={styles.userlistWrapper}>
-        <UserList />
+      <div className={styles.sidebarWrapper}>
+        <LoginSidebar />
       </div>
       <div className={styles.loginFormWrapper}>
-        {/* Here we will then put the Login form */}
-        <h2>Login Form Goes Here</h2>
+        <LoginForm />
       </div>
     </div>
   );

@@ -6,8 +6,9 @@ body, #root {
     url("https://www.transparenttextures.com/patterns/maze-black.png"),
     linear-gradient(135deg, #000000 0%, #b00020 40%, #000000 100%);
   background-size: auto, cover; /* texture: auto, gradient: cover */
+  background-blend-mode: multiply; /* Mix the texture with the gradient */
   color: #fff;
-  position: relative; /* needed for the pseudo-element */
+  /*position: relative; /* needed for the pseudo-element */
   font-family: Arial, sans-serif;
 }
 

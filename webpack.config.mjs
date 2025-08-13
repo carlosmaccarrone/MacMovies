@@ -18,6 +18,10 @@ export default {
         }
       },
       {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        type: 'asset/resource'
+      },      
+      {
         test: /\.module\.css$/,
         use: [
           'style-loader',
