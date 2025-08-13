@@ -81,8 +81,8 @@
 
 @media (max-width: 768px) {
   .sidebarContainer {
-    max-width: 100%; /* que ocupe todo el ancho disponible */
-    max-height: none; /* para que no limite la altura en móvil */
+    max-width: 100%; /* that occupies the entire available width */
+    max-height: none; /* so that it does not limit the height on mobile */
     margin: 0 auto;
   }
 

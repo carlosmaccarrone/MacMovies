@@ -1,11 +1,10 @@
-.logo {
-  width: 150px; /* tamaño default */
+/*.logo {
   height: auto;
   display: block;
   margin: 0 auto;
-}
+}*/
 
-.small {
+/*.small {
   width: 100px;
 }
 
@@ -20,6 +19,6 @@
 
 @media (max-width: 768px) {
   .large {
-    width: 260px; /* más chico en móvil */
+    width: 260px;
   }
-}
+}*/
