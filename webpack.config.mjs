@@ -78,7 +78,7 @@ export default {
   devServer: {
     static: {
       directory: path.join(process.cwd(), 'public'),
-      serveIndex: false, // avoid malformed URI
+      /*serveIndex: false,*/ // OPTIONAL: avoid malformed URI
     },
     compress: true,
     port: 3000,
