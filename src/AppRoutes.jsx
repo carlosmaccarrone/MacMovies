@@ -4,7 +4,7 @@ import Home from '@/pages/Home/Home';
 
 export default function AppRoutes() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/MacMovies">
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/home" element={<Home />} />

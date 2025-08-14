@@ -11,6 +11,7 @@ export default {
   output: {
     path: path.resolve(process.cwd(), 'dist'),
     filename: 'bundle.js',
+    publicPath: '/MacMovies/',
     clean: true,
   },
   module: {
@@ -75,6 +76,7 @@ export default {
   devServer: {
     static: {
       directory: path.join(process.cwd(), 'public'),
+      publicPath: '/MacMovies/'
     },
     compress: true,
     port: 3000,
