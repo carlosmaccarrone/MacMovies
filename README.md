@@ -30,6 +30,7 @@ A React **context** is used to manage session and user state.
 - Jest (for testing)  
 - cross-env  
 - CSS Modules  
+- copy-webpack-plugin (for copying static assets to the build)
 
 ## Setup
 
