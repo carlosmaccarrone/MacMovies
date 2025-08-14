@@ -1,7 +1,6 @@
 import styles from '@/pages/Login/LoginForm.module.css';
 import { useAuth } from '@/contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
-import { fetchUser } from '@/utils/fetchUser';
 import Logo from '@/components/Logo';
 import { useState } from 'react';
 
