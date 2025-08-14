@@ -37,9 +37,9 @@ root/
 │   ├─ contexts/        # Session & user context
 │   ├─ pages/           # Page components (Login, Home, etc.)
 │   ├─ styles/          # Global styles
-│   ├─ App.jsx          # Main app component
-│   ├─ AppRoutes.jsx    # Routes definition
-│   └─ index.jsx        # App entry point
+│   ├─ App.jsx           # Main app component
+│   ├─ AppRoutes.jsx     # Routes definition
+│   └─ index.jsx         # App entry point
 ├── public/
 │   ├─ assets/          # Images, icons, logos
 │   ├─ images_large/    # Movie posters
