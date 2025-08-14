@@ -18,7 +18,7 @@ function LoginSidebar() {
   `;
 
   useEffect(() => {
-    fetch('/users.json')
+    fetch('./users.json')
       .then((res) => res.json())
       .then((data) => {
         const decodedUsers = data.map(user => {
