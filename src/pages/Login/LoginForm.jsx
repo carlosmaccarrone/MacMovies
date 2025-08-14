@@ -1,6 +1,7 @@
 import styles from '@/pages/Login/LoginForm.module.css';
 import { useAuth } from '@/contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
+import { fetchUser } from '@/utils/fetchUser';
 import Logo from '@/components/Logo';
 import { useState } from 'react';
 
@@ -17,27 +18,30 @@ const LoginForm = () => {
 
   const handleLogin = async (e) => {
     e.preventDefault();
+    console.log('handleLogin called', { username, password });
     setLoading(true);
     setError('');
 
-  try {
-    const userFound = await fetchUser(username);
+    try {
+      const userFound = await fetchUser(username);
+      console.log('userFound:', userFound);
 
-    if (!userFound || simpleHash(password) !== userFound.password) {
-      setTimeout(() => { 
-        setError('Incorrect username or password');
-        setLoading(false);
-      }, 400);
-    } else {
-      setTimeout(() => { 
-        setLoading(false);
-        login(userFound.username); 
-        navigate('/home');
-      }, 400);
-    }
-  } catch (err) {
-    setError('Error connecting to the server');
-    setLoading(false);
+      if (!userFound || simpleHash(password) !== userFound.password) {
+        setTimeout(() => { 
+          setError('Incorrect username or password');
+          setLoading(false);
+        }, 400);
+      } else {
+        setTimeout(() => { 
+          setLoading(false);
+          login(userFound.username); 
+          navigate('/home');
+        }, 400);
+      }
+    } catch (err) {
+      console.error('Fetch users failed in handleLogin:', err);
+      setError('Error connecting to the server');
+      setLoading(false);
     }
   };
 
