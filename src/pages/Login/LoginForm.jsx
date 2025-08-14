@@ -18,13 +18,11 @@ const LoginForm = () => {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    console.log('handleLogin called', { username, password });
     setLoading(true);
     setError('');
 
     try {
       const userFound = await fetchUser(username);
-      console.log('userFound:', userFound);
 
       if (!userFound || simpleHash(password) !== userFound.password) {
         setTimeout(() => { 
@@ -39,7 +37,6 @@ const LoginForm = () => {
         }, 400);
       }
     } catch (err) {
-      console.error('Fetch users failed in handleLogin:', err);
       setError('Error connecting to the server');
       setLoading(false);
     }
