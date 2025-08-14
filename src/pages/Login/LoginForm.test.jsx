@@ -10,7 +10,7 @@ await jest.unstable_mockModule('react-router-dom', () => ({
   useNavigate: () => navigateMock,
 }));
 
-// We import the component after applying the mocks
+// import the component with the mocks already applied
 const { default: LoginForm } = await import('@/pages/Login/LoginForm');
 
 // login and navigate mocks
@@ -21,7 +21,7 @@ describe('LoginForm', () => {
   beforeEach(() => {
     jest.clearAllMocks();
     document.body.innerHTML = '';
-    jest.useRealTimers();
+    jest.useRealTimers(); // ensure real timers by default
     
     // mock global fetch
     global.fetch = jest.fn();
@@ -39,6 +39,7 @@ describe('LoginForm', () => {
   });
 
   test('displays error when username or password is incorrect', async () => {
+    // activate fake timers just for this test
     jest.useFakeTimers();
 
     global.fetch.mockResolvedValueOnce({
@@ -51,8 +52,10 @@ describe('LoginForm', () => {
     fireEvent.change(screen.getByPlaceholderText(/password/i), { target: { value: '1234' } });
     fireEvent.click(screen.getByRole('button', { name: /login/i }));
 
+    // wait for the internal setTimeout of the LoginForm
     jest.advanceTimersByTime(400);
 
+    // use waitFor to ensure the message appears
     await waitFor(() =>
       expect(screen.getByText(/incorrect username or password/i)).toBeInTheDocument()
     );
@@ -71,6 +74,7 @@ describe('LoginForm', () => {
     fireEvent.change(screen.getByPlaceholderText(/password/i), { target: { value: '1234' } });
     fireEvent.click(screen.getByRole('button', { name: /login/i }));
 
+    // expect all asynchronous logic to execute
     await waitFor(() => expect(loginMock).toHaveBeenCalledWith('test'));
     await waitFor(() => expect(navigateMock).toHaveBeenCalledWith('/home'));
   });
