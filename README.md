@@ -32,30 +32,29 @@ A React **context** is used to manage session and user state.
 ## Project Structure
 
 root/
-├── src/
-│   ├─ components/      # React components
-│   ├─ contexts/        # Session & user context
-│   ├─ pages/           # Page components (Login, Home, etc.)
-│   ├─ styles/          # Global styles
-│   ├─ App.jsx           # Main app component
-│   ├─ AppRoutes.jsx     # Routes definition
-│   └─ index.jsx         # App entry point
-├── public/
-│   ├─ assets/          # Images, icons, logos
-│   ├─ images_large/    # Movie posters
-│   ├─ images_thumb/    # Movie thumbnails
-│   ├─ index.html       # Main HTML file
-│   ├─ movies.json      # Simulated backend data for movies
-│   └─ users.json       # Simulated backend data for users
-├── babel.config.json
-├── jest.config.mjs
-├── jest.setup.mjs
-├── jsconfig.json
-├── package.json
-├── package-lock.json
-├── README.md
-└── webpack.config.mjs
-
+  src/
+    components/      # React components
+    contexts/        # Session & user context
+    pages/           # Page components (Login, Home, etc.)
+    styles/          # Global styles
+    App.jsx          # Main app component
+    AppRoutes.jsx    # Routes definition
+    index.jsx        # App entry point
+  public/
+    assets/          # Images, icons, logos
+    images_large/    # Movie posters
+    images_thumb/    # Movie thumbnails
+    index.html       # Main HTML file
+    movies.json      # Simulated backend data for movies
+    users.json       # Simulated backend data for users
+  babel.config.json
+  jest.config.mjs
+  jest.setup.mjs
+  jsconfig.json
+  package.json
+  package-lock.json
+  README.md
+  webpack.config.mjs
 
 ## Setup
 
