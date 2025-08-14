@@ -40,7 +40,6 @@ root/
 │   ├─ App.jsx          # Main app component
 │   ├─ AppRoutes.jsx    # Routes definition
 │   └─ index.jsx        # App entry point
-│
 ├── public/
 │   ├─ assets/          # Images, icons, logos
 │   ├─ images_large/    # Movie posters
@@ -48,7 +47,6 @@ root/
 │   ├─ index.html       # Main HTML file
 │   ├─ movies.json      # Simulated backend data for movies
 │   └─ users.json       # Simulated backend data for users
-│
 ├── babel.config.json
 ├── jest.config.mjs
 ├── jest.setup.mjs
