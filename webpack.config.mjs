@@ -1,6 +1,7 @@
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import CopyPlugin from "copy-webpack-plugin";
 import { fileURLToPath } from 'url';
+import webpack from 'webpack';
 import path from 'path';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -76,6 +77,9 @@ export default {
           } 
         }
       ]
+    }),
+    new webpack.DefinePlugin({
+      'process.env.GH_PAGES': JSON.stringify(isGhPages)
     })
   ],
   devServer: {
