@@ -35,7 +35,7 @@
   .loginFormWrapper {
     order: 1; /* mobile-first LoginForm */
     width: 100%;
-    flex: 0 1 470px; /* flex-grow: 0 (doesn't grow beyond 470px) flex-shrink: 1 (can be shrunk if necessary) flex-basis: 470px (initial size) */
+    flex: 0 1 490px; /* flex-grow: 0 (doesn't grow beyond 470px) flex-shrink: 1 (can be shrunk if necessary) flex-basis: 470px (initial size) */
     overflow: hidden;
 
   }

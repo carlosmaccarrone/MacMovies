@@ -61,3 +61,19 @@ Jest is configured for ESM and includes mocks for assets when needed.
 ## License
 
 MIT © Carlos Maccarrone
+
+
+**Disclaimer – Media Assets:**  
+All movie posters, thumbnails, and related images used in this project are the property of their respective copyright holders.  
+They are included here for demonstration and educational purposes only.  
+No copyright infringement is intended, and this project does not claim ownership of any third-party media assets.
+
+**Disclaimer – Fonts:**  
+All fonts used in this project are the property of their respective owners and are subject to their own license terms.  
+They are included here for demonstration purposes only.  
+If you plan to reuse this code, please ensure you have the appropriate rights to use and distribute the fonts.
+
+
+## Credits
+
+Movie and poster data provided by TMDb — The Movie Database® (https://www.themoviedb.org/).
