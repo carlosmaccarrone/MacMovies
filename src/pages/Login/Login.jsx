@@ -1,6 +1,6 @@
-import LoginSidebar from './LoginSidebar';
-import styles from './Login.module.css';
-import LoginForm from './LoginForm';
+import LoginSidebar from '@/pages/Login/LoginSidebar';
+import styles from '@/pages/Login/Login.module.css';
+import LoginForm from '@/pages/Login/LoginForm';
 
 export default function Login() {
   return (

@@ -1,7 +1,7 @@
-import { useAuth } from '../../contexts/AuthContext';
+import styles from '@/pages/Login/LoginForm.module.css';
+import { useAuth } from '@/contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
-import styles from './LoginForm.module.css';
-import Logo from '../../components/Logo';
+import Logo from '@/components/Logo';
 import { useState } from 'react';
 
 const simpleHash = (str) => btoa(str);
