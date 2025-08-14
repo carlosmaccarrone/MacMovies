@@ -1,4 +1,4 @@
-import styles from './LoginSidebar.module.css';
+import styles from '@/pages/Login/LoginSidebar.module.css';
 import { useEffect, useState } from 'react';
 
 function LoginSidebar() {
