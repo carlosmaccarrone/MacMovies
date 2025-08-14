@@ -1,3 +1,5 @@
+[![CI](https://github.com/carlosmaccarrone/MacMovies/actions/workflows/ci.yml/badge.svg)](https://github.com/carlosmaccarrone/MacMovies/actions/workflows/ci.yml)
+
 # MacMovies
 
 A minimal React app demo by **Carlos Maccarrone**.
