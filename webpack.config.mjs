@@ -12,7 +12,8 @@ export default {
   output: {
     path: path.resolve(process.cwd(), 'dist'),
     filename: 'bundle.js',
-    publicPath: isDev ? '/' : './',
+/*    publicPath: isDev ? '/' : './',*/
+    publicPath: '',
     clean: true,
   },
   devtool: isDev ? 'source-map' : false,
