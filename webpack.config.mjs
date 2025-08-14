@@ -6,13 +6,15 @@ import path from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const isDev = process.env.NODE_ENV !== 'production';
+const isServeDist = process.env.SERVE_DIST === 'true';
+const isGhPages = process.env.GH_PAGES === 'true';
 
 export default {
   entry: './src/index.jsx',
   output: {
     path: path.resolve(process.cwd(), 'dist'),
     filename: 'bundle.js',
-    publicPath: isDev ? '/' : './',
+    publicPath: isDev ? '/' : isServeDist ? './' : isGhPages ? '/MacMovies/' : './',
     clean: true,
   },
   devtool: isDev ? 'source-map' : false,
@@ -69,7 +71,7 @@ export default {
           from: "public", 
           to: "", 
           globOptions: { 
-            ignore: ["**/index.html"]  // ignorá el index.html
+            ignore: ["**/index.html"]  // ignore the index.html
           } 
         }
       ]
@@ -78,7 +80,7 @@ export default {
   devServer: {
     static: {
       directory: path.join(process.cwd(), 'public'),
-      /*serveIndex: false,*/ // OPTIONAL: avoid malformed URI
+      /*serveIndex: false,*/ // OPTIONAL: avoid malformed URI shell warning
     },
     compress: true,
     port: 3000,
