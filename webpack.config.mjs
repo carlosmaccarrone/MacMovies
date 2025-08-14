@@ -5,16 +5,24 @@ import path from 'path';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const isDev = process.env.NODE_ENV !== 'production';
-const isServeDist = process.env.SERVE_DIST === 'true';
-const isGhPages = process.env.GH_PAGES === 'true';
+/*const isDev = process.env.NODE_ENV !== 'production';*/
+
+let publicPath;
+
+if (process.env.SERVE_DIST) {
+  publicPath = './';
+} else if (process.env.GH_PAGES) {
+  publicPath = '/MacMovies/';
+} else {
+  publicPath = '/';
+}
 
 export default {
   entry: './src/index.jsx',
   output: {
     path: path.resolve(process.cwd(), 'dist'),
     filename: 'bundle.js',
-    publicPath: isDev ? '/' : isServeDist ? './' : isGhPages ? '/MacMovies/' : './',
+    publicPath: publicPath,
     clean: true,
   },
   devtool: isDev ? 'source-map' : false,
