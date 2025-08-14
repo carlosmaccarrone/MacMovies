@@ -22,9 +22,13 @@ const LoginForm = () => {
     setError('');
 
     try {
-      const userFound = await fetchUser(username);
+      const response = await fetch('./users.json', { cache: 'no-store' });
+      if (!response.ok) throw new Error('Error fetching users');
+      const users = await response.json();
 
-      if (!userFound || simpleHash(password) !== userFound.password) {
+      const userFound = users.find(u => u.username === username);
+
+      if (!userFound || btoa(password) !== userFound.password) {
         setTimeout(() => { 
           setError('Incorrect username or password');
           setLoading(false);
@@ -37,6 +41,7 @@ const LoginForm = () => {
         }, 400);
       }
     } catch (err) {
+      console.error('Fetch users failed:', err);
       setError('Error connecting to the server');
       setLoading(false);
     }
