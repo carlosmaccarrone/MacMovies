@@ -33,15 +33,15 @@ A React **context** is used to manage session and user state.
 
 1. Clone the repository:
 
-	git clone <repo-url>
+ 	git clone <repo-url>
 
 2. Install dependencies:
 
-	npm install
+ 	npm install
 
 3. Start the development server:
 
-	npm start
+ 	npm start
 
 The app should now be running at `http://localhost:3000`.
 
@@ -57,4 +57,4 @@ Jest is configured for ESM and includes mocks for assets when needed.
 
 ## License
 
- 	MIT © Carlos Maccarrone
+MIT © Carlos Maccarrone
