@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "description": "",
+  "homepage": "https://carlosmaccarrone.github.io/MacMovies",
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --mode development --open",
