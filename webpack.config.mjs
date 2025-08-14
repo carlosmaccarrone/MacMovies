@@ -5,13 +5,15 @@ import path from 'path';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+const isDev = process.env.NODE_ENV !== 'production';
 
 export default {
   entry: './src/index.jsx',
   output: {
     path: path.resolve(process.cwd(), 'dist'),
     filename: 'bundle.js',
-    publicPath: './',
+    publicPath: isDev ? '/' : './',
+/*    publicPath: './',*/
     clean: true,
   },
   module: {
