@@ -1,0 +1,42 @@
+[
+  {
+    "username": "alan.turing",
+    "password": "ZW5pZ21h"
+  },
+  {
+    "username": "grace.hopper",
+    "password": "Y29tcGlsZXI="
+  },
+  {
+    "username": "euclid.geometry",
+    "password": "bWF0aGVtYXRpY3M="
+  },
+  {
+    "username": "carl.friedrich.gauss",
+    "password": "bWF0aA=="
+  },
+  {
+    "username": "pierre.fermat",
+    "password": "dGhlb3JpYQ=="
+  },
+  {
+    "username": "marie.curie",
+    "password": "cmFkaWFjdGl2ZQ=="
+  },
+  {
+    "username": "isaac.newton",
+    "password": "bGF3"
+  },
+  {
+    "username": "nikola.tesla",
+    "password": "ZWxlY3RyaWNp"
+  },
+  {
+    "username": "ada.lovelace",
+    "password": "Y29tcHV0ZXI="
+  },
+  {
+    "username": "linus.torvalds",
+    "password": "b3BlbnNvdXJjZQ=="
+  }
+]

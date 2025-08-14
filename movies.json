@@ -1,0 +1,1006 @@
+[
+  {
+    "id": "movie001",
+    "title": "Inception",
+    "year": 2010,
+    "genres": ["sci-fi", "thriller", "action"], 
+    "rating": 5,
+    "country": "USA",
+    "duration": 148,
+    "directors": [
+      { "firstName": "Christopher", "lastName": "Nolan" }
+    ],
+    "synopsis": {
+      "short": "A thief who steals corporate secrets through the use of dream-sharing technology.",
+      "long": "A skilled thief who steals secrets through dream-sharing technology is given a chance to erase his criminal past by performing an inception: planting an idea into a target's subconscious. As he assembles his team, the lines between reality and dreams blur in a mind-bending journey."
+    },    
+    "images": {
+      "thumbnail": "/images_thumb/inception.jpg",
+      "large": "/images_large/inception.jpg"
+    }    
+  },
+  {
+    "id": "movie002",
+    "title": "The Matrix",
+    "year": 1999,
+    "genres": ["sci-fi", "action"],
+    "rating": 5,
+    "country": "USA",
+    "duration": 136,
+    "directors": [
+      { "firstName": "Lana", "lastName": "Wachowski" }, 
+      { "firstName": "Lilly", "lastName": "Wachowski" }
+    ],    
+    "synopsis": {
+      "short": "A computer hacker learns about the true nature of his reality and his role in the war against its controllers.",
+      "long": "A hacker named Neo discovers that reality as he knows it is a simulated world controlled by sentient machines. Joining a rebel group, he must embrace his role as 'The One' to liberate humanity from their digital prison."
+    },       
+    "images": {
+      "thumbnail": "/images_thumb/matrix.jpg",
+      "large": "/images_large/matrix.jpg"
+    }       
+  },
+  {
+    "id": "movie003",
+    "title": "Interstellar",
+    "year": 2014,
+    "genres": ["sci-fi", "drama", "adventure"],
+    "rating": 5,
+    "country": "USA",
+    "duration": 169,
+    "directors": [
+      { "firstName": "Christopher", "lastName": "Nolan" }
+    ],    
+    "synopsis": {
+      "short": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+      "long": "In a dystopian future where Earth is dying, a group of astronauts embarks on a space mission through a wormhole to find a new habitable planet. Facing time dilation and personal sacrifice, they confront the limits of human endurance and love."
+    },     
+    "images": {
+      "thumbnail": "/images_thumb/interstellar.jpg",
+      "large": "/images_large/interstellar.jpg"
+    }       
+  },
+  {
+    "id": "movie004",
+    "title": "The Dark Knight",
+    "year": 2008,
+    "genres": ["action", "crime", "drama"],
+    "rating": 5,
+    "country": "USA",
+    "duration": 152,
+    "directors": [
+      { "firstName": "Christopher", "lastName": "Nolan" }
+    ],    
+    "synopsis": {
+      "short": "Batman faces the Joker, a criminal mastermind who seeks to create chaos in Gotham City.",
+      "long": "Batman faces his toughest challenge yet when the anarchistic Joker terrorizes Gotham City. As chaos ensues, Batman must balance justice and morality, confronting the darkness within himself and his city."
+    },       
+    "images": {
+      "thumbnail": "/images_thumb/dark_knight.jpg",
+      "large": "/images_large/dark_knight.jpg"
+    }        
+  },
+  {
+    "id": "movie005",
+    "title": "Pulp Fiction",
+    "year": 1994,
+    "genres": ["crime", "drama"],
+    "rating": 5,
+    "country": "USA",
+    "duration": 154,
+    "directors": [
+      { "firstName": "Quentin", "lastName": "Tarantino" }
+    ],    
+    "synopsis": {
+      "short": "The lives of two mob hitmen, a boxer, and others intertwine in a series of incidents in Los Angeles.",
+      "long": "A nonlinear tale intertwining the lives of hitmen, a boxer, a gangster’s wife, and small-time criminals. The film explores violence, redemption, and fate with sharp dialogue and dark humor."
+    },      
+    "images": {
+      "thumbnail": "/images_thumb/pulp_fiction.jpg",
+      "large": "/images_large/pulp_fiction.jpg"
+    }     
+  },
+  {
+    "id": "movie006",
+    "title": "Fight Club",
+    "year": 1999,
+    "genres": ["drama"],
+    "rating": 5,
+    "country": "USA",
+    "duration": 139,
+    "directors": [
+      { "firstName": "David", "lastName": "Fincher" }
+    ],    
+    "synopsis": {
+      "short": "An insomniac office worker and a soap maker form an underground fight club.",
+      "long": "An insomniac office worker forms an underground fight club with a charismatic soap maker, challenging societal norms and exploring themes of identity, consumerism, and mental instability."
+    },          
+    "images": {
+      "thumbnail": "/images_thumb/fight_club.jpg",
+      "large": "/images_large/fight_club.jpg"
+    }      
+  },
+  {
+    "id": "movie007",
+    "title": "Forrest Gump",
+    "year": 1994,
+    "genres": ["drama", "romance"],
+    "rating": 5,
+    "country": "USA",
+    "duration": 142,
+    "directors": [
+      { "firstName": "Robert", "lastName": "Zemeckis" }
+    ],    
+    "synopsis": {
+      "short": "A kind-hearted man whose simple outlook on life leads him through remarkable adventures and unforgettable moments.",
+      "long": "The life story of Forrest Gump, a kind-hearted and simple man whose innocence and perseverance lead him through extraordinary experiences, influencing historical events and touching the lives of those around him."
+    },        
+    "images": {
+      "thumbnail": "/images_thumb/forrest_gump.jpg",
+      "large": "/images_large/forrest_gump.jpg"
+    }       
+  },
+  {
+    "id": "movie008",
+    "title": "The Shawshank Redemption",
+    "year": 1994,
+    "genres": ["drama"],
+    "rating": 5,
+    "country": "USA",
+    "duration": 142,
+    "directors": [
+      { "firstName": "Frank", "lastName": "Darabont" }
+    ],    
+    "synopsis": {
+      "short": "Two imprisoned men bond over a number of years, finding solace and eventual redemption.",
+      "long": "Wrongfully imprisoned banker Andy Dufresne forms an unlikely friendship with fellow inmate Red. Through hope and resilience, they seek freedom and redemption inside the brutal Shawshank prison."
+    },       
+    "images": {
+      "thumbnail": "/images_thumb/shawshank_redemption.jpg",
+      "large": "/images_large/shawshank_redemption.jpg"
+    }      
+  },
+  {
+    "id": "movie009",
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "year": 2001,
+    "genres": ["adventure", "fantasy"],
+    "rating": 5,
+    "country": "New Zealand",
+    "duration": 178,
+    "directors": [
+      { "firstName": "Peter", "lastName": "Jackson" }
+    ],    
+    "synopsis": {
+      "short": "A meek Hobbit sets out on a journey to destroy a powerful ring and save Middle-earth.",
+      "long": "A young hobbit named Frodo inherits a powerful ring and must journey with a fellowship to destroy it before the dark lord Sauron can reclaim it and conquer Middle-earth."
+    },       
+    "images": {
+      "thumbnail": "/images_thumb/lotr_fellowship.jpg",
+      "large": "/images_large/lotr_fellowship.jpg"
+    }     
+  },
+  {
+    "id": "movie010",
+    "title": "Star Wars: Episode IV - A New Hope",
+    "year": 1977,
+    "genres": ["action", "adventure", "sci-fi"],
+    "rating": 5,
+    "country": "USA",
+    "duration": 121,
+    "directors": [
+      { "firstName": "George", "lastName": "Lucas" }
+    ],    
+    "synopsis": {
+      "short": "Luke Skywalker joins forces with a Jedi Knight to save the galaxy from the Empire.",
+      "long": "Luke Skywalker joins forces with a band of rebels to fight the oppressive Galactic Empire and rescue Princess Leia. As the battle unfolds, Luke discovers his destiny as a Jedi Knight."
+    },      
+    "images": {
+      "thumbnail": "/images_thumb/star_wars_iv.jpg",
+      "large": "/images_large/star_wars_iv.jpg"
+    }      
+  },
+  {
+    "id": "movie011",
+    "title": "Gladiator",
+    "year": 2000,
+    "genres": ["action", "drama"],
+    "rating": 5,
+    "country": "USA",
+    "duration": 155,
+    "directors": [
+      { "firstName": "Ridley", "lastName": "Scott" }
+    ],    
+    "synopsis": {
+      "short": "A former Roman General seeks revenge after being betrayed and his family murdered.",
+      "long": "A betrayed Roman general seeks vengeance against the corrupt emperor who murdered his family and sent him into slavery, rising through the ranks to become a gladiator and fight for justice."
+    },        
+    "images": {
+      "thumbnail": "/images_thumb/gladiator.jpg",
+      "large": "/images_large/gladiator.jpg"
+    }      
+  },
+  {
+    "id": "movie012",
+    "title": "The Godfather",
+    "year": 1972,
+    "genres": ["crime", "drama"],
+    "rating": 5,
+    "country": "USA",
+    "duration": 175,
+    "directors": [
+      { "firstName": "Francis Ford", "lastName": "Coppola" }
+    ],      
+    "synopsis": {
+      "short": "The aging patriarch of an organized crime dynasty transfers control to his reluctant son.",
+      "long": "The aging patriarch of a crime dynasty transfers control of his clandestine empire to his reluctant son, navigating loyalty, power, and family in the world of organized crime."
+    },       
+    "images": {
+      "thumbnail": "/images_thumb/godfather.jpg",
+      "large": "/images_large/godfather.jpg"
+    }       
+  },
+  {
+    "id": "movie013",
+    "title": "The Godfather: Part II",
+    "year": 1974,
+    "genres": ["crime", "drama"],
+    "rating": 5,
+    "country": "USA",
+    "duration": 202,
+    "directors": [
+      { "firstName": "Francis Ford", "lastName": "Coppola" }
+    ],    
+    "synopsis": {
+      "short": "The early life and career of Vito Corleone is portrayed while his son expands the family business.",
+      "long": "Continuing the saga, the film interweaves the young Vito Corleone’s rise to power with his son Michael’s ruthless expansion of the family empire amid betrayal and moral decay."
+    },       
+    "images": {
+      "thumbnail": "/images_thumb/godfather_2.jpg",
+      "large": "/images_large/godfather_2.jpg"
+    }       
+  },
+  {
+    "id": "movie014",
+    "title": "Jurassic Park",
+    "year": 1993,
+    "genres": ["adventure", "sci-fi", "thriller"],
+    "rating": 4,
+    "country": "USA",
+    "duration": 127,
+    "directors": [
+      { "firstName": "Steven", "lastName": "Spielberg" }
+    ],    
+    "synopsis": {
+      "short": "Scientists clone dinosaurs to populate a theme park, but things go terribly wrong.",
+      "long": "Scientists create a theme park of cloned dinosaurs, but when the security systems fail, chaos ensues, and the visitors must survive against prehistoric predators."
+    },          
+    "images": {
+      "thumbnail": "/images_thumb/jurassic_park.jpg",
+      "large": "/images_large/jurassic_park.jpg"
+    }     
+  },
+  {
+    "id": "movie015",
+    "title": "The Avengers",
+    "year": 2012,
+    "genres": ["action", "adventure", "sci-fi"],
+    "rating": 4,
+    "country": "USA",
+    "duration": 143,
+    "directors": [
+      { "firstName": "Joss", "lastName": "Whedon" }
+    ],    
+    "synopsis": {
+      "short": "Earth's mightiest heroes team up to stop an alien invasion.",
+      "long": "Earth’s mightiest heroes assemble to stop Loki and his alien army from enslaving humanity, learning to work as a team despite their differences."
+    },     
+    "images": {
+      "thumbnail": "/images_thumb/avengers.jpg",
+      "large": "/images_large/avengers.jpg"
+    }       
+  },
+  {
+    "id": "movie016",
+    "title": "Titanic",
+    "year": 1997,
+    "genres": ["drama", "romance"],
+    "rating": 5,
+    "country": "USA",
+    "duration": 195,
+    "directors": [
+      { "firstName": "James", "lastName": "Cameron" }
+    ],    
+    "synopsis": {
+      "short": "A love story unfolds aboard the ill-fated RMS Titanic.",
+      "long": "A young couple from different social classes fall in love aboard the ill-fated RMS Titanic, facing tragedy as the ship sinks into the Atlantic Ocean."
+    },         
+    "images": {
+      "thumbnail": "/images_thumb/titanic.jpg",
+      "large": "/images_large/titanic.jpg"
+    }         
+  },
+  {
+    "id": "movie017",
+    "title": "Avatar",
+    "year": 2009,
+    "genres": ["action", "adventure", "fantasy"],
+    "rating": 4,
+    "country": "USA",
+    "duration": 162,
+    "directors": [
+      { "firstName": "James", "lastName": "Cameron" }
+    ],    
+    "synopsis": {
+      "short": "A paraplegic Marine is sent to the alien world of Pandora on a unique mission.",
+      "long": "On the alien world of Pandora, a paraplegic marine is sent to infiltrate the native Na’vi but finds himself torn between his mission and the indigenous people’s struggle to protect their home."
+    },      
+    "images": {
+      "thumbnail": "/images_thumb/avatar.jpg",
+      "large": "/images_large/avatar.jpg"
+    }     
+  },
+  {
+    "id": "movie018",
+    "title": "The Silence of the Lambs",
+    "year": 1991,
+    "genres": ["crime", "drama", "thriller"],
+    "rating": 5,
+    "country": "USA",
+    "duration": 118,
+    "directors": [
+      { "firstName": "Jonathan", "lastName": "Demme" }
+    ],    
+    "synopsis": {
+      "short": "A young FBI cadet must seek the help of an incarcerated cannibal to catch another killer.",
+      "long": "A young FBI trainee seeks the help of imprisoned cannibalistic serial killer Hannibal Lecter to catch another serial murderer, navigating psychological horror and suspense."
+    },       
+    "images": {
+      "thumbnail": "/images_thumb/silence_of_the_lambs.jpg",
+      "large": "/images_large/silence_of_the_lambs.jpg"
+    }      
+  },
+  {
+    "id": "movie019",
+    "title": "Saving Private Ryan",
+    "year": 1998,
+    "genres": ["drama", "war"],
+    "rating": 5,
+    "country": "USA",
+    "duration": 169,
+    "directors": [
+      { "firstName": "Steven", "lastName": "Spielberg" }
+    ],    
+    "synopsis": {
+      "short": "Captain Miller and his squad go behind enemy lines to retrieve a paratrooper during WWII.",
+      "long": "During World War II, a group of soldiers embark on a dangerous mission to find and bring home Private James Ryan, whose brothers have been killed in combat."
+    },    
+    "images": {
+      "thumbnail": "/images_thumb/saving_private_ryan.jpg",
+      "large": "/images_large/saving_private_ryan.jpg"
+    }      
+  },
+  {
+    "id": "movie020",
+    "title": "The Prestige",
+    "year": 2006,
+    "genres": ["drama", "mystery", "thriller"],
+    "rating": 5,
+    "country": "USA",
+    "duration": 130,
+    "directors": [
+      { "firstName": "Christopher", "lastName": "Nolan" }
+    ],    
+    "synopsis": {
+      "short": "Two rival magicians engage in a battle to create the ultimate illusion.",
+      "long": "Two rival magicians engage in a bitter battle of wits and obsession, pushing the boundaries of deception and sacrifice in their quest for the ultimate illusion."
+    },    
+    "images": {
+      "thumbnail": "/images_thumb/prestige.jpg",
+      "large": "/images_large/prestige.jpg"
+    }     
+  },
+  {
+    "id": "movie021",
+    "title": "Back to the Future",
+    "year": 1985,
+    "genres": ["adventure", "comedy", "sci-fi"],
+    "rating": 5,
+    "country": "USA",
+    "duration": 116,
+    "directors": [
+      { "firstName": "Robert", "lastName": "Zemeckis" }
+    ],    
+    "synopsis": {
+      "short": "A teenager travels back in time and must ensure his parents fall in love.",
+      "long": "A teenager is accidentally sent back in time to 1955, where he must ensure his parents fall in love or risk altering his own existence, with the help of an eccentric scientist and a time-traveling DeLorean."
+    },      
+    "images": {
+      "thumbnail": "/images_thumb/back_to_the_future.jpg",
+      "large": "/images_large/back_to_the_future.jpg"
+    }       
+  },
+  {
+    "id": "movie022",
+    "title": "The Lion King",
+    "year": 1994,
+    "genres": ["animation", "adventure", "drama"],
+    "rating": 5,
+    "country": "USA",
+    "duration": 88,
+    "directors": [
+      { "firstName": "Roger", "lastName": "Allers" },
+      { "firstName": "Rob", "lastName": "Minkoff" }
+    ],    
+    "synopsis": {
+      "short": "A young lion prince flees his kingdom only to learn the true meaning of responsibility.",
+      "long": "A young lion prince flees his kingdom after the death of his father but must embrace his destiny and return to reclaim his throne from his treacherous uncle."
+    },       
+    "images": {
+      "thumbnail": "/images_thumb/lion_king.jpg",
+      "large": "/images_large/lion_king.jpg"
+    }     
+  },
+  {
+    "id": "movie023",
+    "title": "The Departed",
+    "year": 2006,
+    "genres": ["crime", "drama", "thriller"],
+    "rating": 5,
+    "country": "USA",
+    "duration": 151,
+    "directors": [
+      { "firstName": "Martin", "lastName": "Scorsese" }
+    ],    
+    "synopsis": {
+      "short": "An undercover cop and a mole in the police attempt to identify each other.",
+      "long": "An undercover cop and a mole in the police force try to identify each other while infiltrating an Irish gang in Boston, leading to a tense game of cat and mouse."
+    },        
+    "images": {
+      "thumbnail": "/images_thumb/the_departed.jpg",
+      "large": "/images_large/the_departed.jpg"
+    }     
+  },
+  {
+    "id": "movie024",
+    "title": "Glory",
+    "year": 1989,
+    "genres": ["drama", "war"],
+    "rating": 4,
+    "country": "USA",
+    "duration": 122,
+    "directors": [
+      { "firstName": "Edward", "lastName": "Zwick" }
+    ],    
+    "synopsis": {
+      "short": "The story of the first all-black volunteer company in the Civil War.",
+      "long": "During the American Civil War, the first all-black volunteer company fights prejudice and battles on the front lines, demonstrating courage and brotherhood."
+    },      
+    "images": {
+      "thumbnail": "/images_thumb/glory.jpg",
+      "large": "/images_large/glory.jpg"
+    }       
+  },
+  {
+    "id": "movie025",
+    "title": "Goodfellas",
+    "year": 1990,
+    "genres": ["crime", "drama"],
+    "rating": 5,
+    "country": "USA",
+    "duration": 146,
+    "directors": [
+      { "firstName": "Martin", "lastName": "Scorsese" }
+    ],    
+    "synopsis": {
+      "short": "The rise and fall of a mob associate in New York City.",
+      "long": "The rise and fall of Henry Hill, a small-time gangster who climbs the ranks of the mafia, revealing the glamour and brutality of organized crime."
+    },          
+    "images": {
+      "thumbnail": "/images_thumb/goodfellas.jpg",
+      "large": "/images_large/goodfellas.jpg"
+    }     
+  },
+  {
+    "id": "movie026",
+    "title": "The Green Mile",
+    "year": 1999,
+    "genres": ["drama", "fantasy"],
+    "rating": 5,
+    "country": "USA",
+    "duration": 189,
+    "directors": [
+      { "firstName": "Frank", "lastName": "Darabont" }
+    ],    
+    "synopsis": {
+      "short": "The lives of death row guards are affected by a gentle giant with a miraculous gift.",
+      "long": "A death row prison guard forms a unique bond with an inmate possessing supernatural healing powers, challenging his beliefs about justice and humanity."
+    },       
+    "images": {
+      "thumbnail": "/images_thumb/green_mile.jpg",
+      "large": "/images_large/green_mile.jpg"
+    }      
+  },
+  {
+    "id": "movie027",
+    "title": "Mad Max: Fury Road",
+    "year": 2015,
+    "genres": ["action", "adventure", "sci-fi"],
+    "rating": 5,
+    "country": "Australia",
+    "duration": 120,
+    "directors": [
+      { "firstName": "George", "lastName": "Miller" }
+    ],    
+    "synopsis": {
+      "short": "In a post-apocalyptic wasteland, Max helps a rebellious woman escape a tyrant.",
+      "long": "In a post-apocalyptic wasteland, a lone warrior joins forces with a group of rebels to overthrow a tyrannical ruler and restore hope to humanity."
+    },       
+    "images": {
+      "thumbnail": "/images_thumb/mad_max_fury_road.jpg",
+      "large": "/images_large/mad_max_fury_road.jpg"
+    }     
+  },
+  {
+    "id": "movie028",
+    "title": "The Social Network",
+    "year": 2010,
+    "genres": ["biography", "drama"],
+    "rating": 4,
+    "country": "USA",
+    "duration": 120,
+    "directors": [
+      { "firstName": "David", "lastName": "Fincher" }
+    ],    
+    "synopsis": {
+      "short": "The story of the founding of Facebook and the lawsuits that followed.",
+      "long": "The story of Mark Zuckerberg’s creation of Facebook and the legal battles that followed, exploring ambition, friendship, and betrayal in the digital age."
+    },         
+    "images": {
+      "thumbnail": "/images_thumb/social_network.jpg",
+      "large": "/images_large/social_network.jpg"
+    }       
+  },
+  {
+    "id": "movie029",
+    "title": "Whiplash",
+    "year": 2014,
+    "genres": ["drama", "music"],
+    "rating": 4,
+    "country": "USA",
+    "duration": 106,
+    "directors": [
+      { "firstName": "Damien", "lastName": "Chazelle" }
+    ],    
+    "synopsis": {
+      "short": "A young drummer enrolls at a music conservatory and clashes with his instructor.",
+      "long": "A talented jazz drummer enrolls in a prestigious music conservatory and faces the relentless demands of a ruthless instructor, pushing him to the edge of his abilities."
+    },      
+    "images": {
+      "thumbnail": "/images_thumb/whiplash.jpg",
+      "large": "/images_large/whiplash.jpg"
+    }       
+  },
+  {
+    "id": "movie030",
+    "title": "The Grand Budapest Hotel",
+    "year": 2014,
+    "genres": ["adventure", "comedy", "drama"],
+    "rating": 4,
+    "country": "USA",
+    "duration": 99,
+    "directors": [
+      { "firstName": "Wes", "lastName": "Anderson" }
+    ],    
+    "synopsis": {
+      "short": "The adventures of a legendary concierge at a famous European hotel between the wars.",
+      "long": "The adventures of a legendary concierge and his protégé at a famous European hotel between the wars, involving theft, friendship, and a battle for a priceless painting."
+    },     
+    "images": {
+      "thumbnail": "/images_thumb/grand_budapest_hotel.jpg",
+      "large": "/images_large/grand_budapest_hotel.jpg"
+    }     
+  },
+{
+    "id": "movie031",
+    "title": "Jurassic World",
+    "year": 2015,
+    "genres": ["action", "adventure", "sci-fi"],
+    "rating": 3,
+    "country": "USA",
+    "duration": 124,
+    "directors": [
+      { "firstName": "Colin", "lastName": "Trevorrow" }
+    ],    
+    "synopsis": {
+      "short": "A new dinosaur theme park suffers a major security breakdown.",
+      "long": "Decades after the original park’s closure, a new dinosaur theme park opens with genetically modified attractions, but things spiral out of control when a dangerous hybrid escapes."
+    },      
+    "images": {
+      "thumbnail": "/images_thumb/jurassic_world.jpg",
+      "large": "/images_large/jurassic_world.jpg"
+    }        
+  },
+  {
+    "id": "movie032",
+    "title": "La La Land",
+    "year": 2016,
+    "genres": ["comedy", "drama", "music", "romance"],
+    "rating": 4,
+    "country": "USA",
+    "duration": 128,
+    "directors": [
+      { "firstName": "Damien", "lastName": "Chazelle" }
+    ],    
+    "synopsis": {
+      "short": "A musician and an aspiring actress fall in love while pursuing their dreams in LA.",
+      "long": "An aspiring actress and a jazz musician pursue their dreams in Los Angeles, navigating love, ambition, and the sacrifices required for success in the entertainment industry."
+    },         
+    "images": {
+      "thumbnail": "/images_thumb/la_la_land.jpg",
+      "large": "/images_large/la_la_land.jpg"
+    }       
+  },
+  {
+    "id": "movie033",
+    "title": "Deadpool",
+    "year": 2016,
+    "genres": ["action", "comedy"],
+    "rating": 4,
+    "country": "USA",
+    "duration": 108,
+    "directors": [
+      { "firstName": "Tim", "lastName": "Miller" }
+    ],    
+    "synopsis": {
+      "short": "A former special forces operative becomes a mercenary with accelerated healing powers.",
+      "long": "A former special forces operative turned mercenary gains accelerated healing powers and adopts a sarcastic alter ego as he seeks revenge against the man who experimented on him."
+    },     
+    "images": {
+      "thumbnail": "/images_thumb/deadpool.jpg",
+      "large": "/images_large/deadpool.jpg"
+    }        
+  },
+  {
+    "id": "movie034",
+    "title": "Blade Runner 2049",
+    "year": 2017,
+    "genres": ["sci-fi", "drama", "mystery"],
+    "rating": 4,
+    "country": "USA",
+    "duration": 164,
+    "directors": [
+      { "firstName": "Denis", "lastName": "Villeneuve" }
+    ],    
+    "synopsis": {
+      "short": "A young blade runner uncovers a secret that could destabilize society.",
+      "long": "A young blade runner discovers a long-buried secret that leads him to track down former blade runner Rick Deckard, uncovering truths about humanity and identity."
+    },    
+    "images": {
+      "thumbnail": "/images_thumb/blade_runner_2049.jpg",
+      "large": "/images_large/blade_runner_2049.jpg"
+    }      
+  },
+  {
+    "id": "movie035",
+    "title": "The Wolf of Wall Street",
+    "year": 2013,
+    "genres": ["biography", "crime", "drama"],
+    "rating": 4,
+    "country": "USA",
+    "duration": 180,
+    "directors": [
+      { "firstName": "Martin", "lastName": "Scorsese" }
+    ],    
+    "synopsis": {
+      "short": "The rise and fall of a stockbroker who engages in corruption and fraud.",
+      "long": "Based on the true story of Jordan Belfort, the film chronicles his rise and fall as a wealthy stockbroker involved in corruption and fraud on Wall Street."
+    },     
+    "images": {
+      "thumbnail": "/images_thumb/wolf_of_wall_street.jpg",
+      "large": "/images_large/wolf_of_wall_street.jpg"
+    }    
+  },
+  {
+    "id": "movie036",
+    "title": "Coco",
+    "year": 2017,
+    "genres": ["animation", "adventure", "family"],
+    "rating": 5,
+    "country": "USA",
+    "duration": 105,
+    "directors": [
+      { "firstName": "Lee", "lastName": "Unkrich" },
+      { "firstName": "Adrian", "lastName": "Molina" }
+    ],    
+    "synopsis": {
+      "short": "A young boy embarks on a journey to the Land of the Dead to unlock his family’s history.",
+      "long": "A young boy passionate about music embarks on a journey to the Land of the Dead to uncover his family’s history and pursue his dreams, learning the importance of memory and tradition."
+    },     
+    "images": {
+      "thumbnail": "/images_thumb/coco.jpg",
+      "large": "/images_large/coco.jpg"
+    }       
+  },
+  {
+    "id": "movie037",
+    "title": "Black Panther",
+    "year": 2018,
+    "genres": ["action", "adventure", "fantasy"],
+    "rating": 4,
+    "country": "USA",
+    "duration": 134,
+    "directors": [
+      { "firstName": "Ryan", "lastName": "Coogler" }
+    ],    
+    "synopsis": {
+      "short": "T'Challa returns home to the secretive African nation of Wakanda to take his rightful place as king.",
+      "long": "T’Challa returns home as king of Wakanda but faces challenges to his throne and threats to his nation’s secrecy and technology from internal and external enemies."
+    },       
+    "images": {
+      "thumbnail": "/images_thumb/black_panther.jpg",
+      "large": "/images_large/black_panther.jpg"
+    }     
+  },
+  {
+    "id": "movie038",
+    "title": "Get Out",
+    "year": 2017,
+    "genres": ["horror", "mystery", "thriller"],
+    "rating": 4,
+    "country": "USA",
+    "duration": 104,
+    "directors": [
+      { "firstName": "Jordan", "lastName": "Peele" }
+    ],    
+    "synopsis": {
+      "short": "A young African-American visits his white girlfriend’s parents, uncovering disturbing secrets.",
+      "long": "A young African-American man visits his white girlfriend’s family estate, uncovering disturbing secrets and facing a terrifying conspiracy."
+    },     
+    "images": {
+      "thumbnail": "/images_thumb/get_out.jpg",
+      "large": "/images_large/get_out.jpg"
+    }     
+  },
+  {
+    "id": "movie039",
+    "title": "Avengers: Infinity War",
+    "year": 2018,
+    "genres": ["action", "adventure", "sci-fi"],
+    "rating": 4,
+    "country": "USA",
+    "duration": 149,
+    "directors": [
+      { "firstName": "Anthony", "lastName": "Russo" },
+      { "firstName": "Joe", "lastName": "Russo" }
+    ],    
+    "synopsis": {
+      "short": "The Avengers and their allies must stop the powerful Thanos from collecting the Infinity Stones.",
+      "long": "The Avengers and their allies unite to stop the powerful Thanos from collecting all the Infinity Stones and wiping out half of all life in the universe."
+    },    
+    "images": {
+      "thumbnail": "/images_thumb/avengers_infinity_war.jpg",
+      "large": "/images_large/avengers_infinity_war.jpg"
+    }      
+  },
+  {
+    "id": "movie040",
+    "title": "Joker",
+    "year": 2019,
+    "genres": ["crime", "drama", "thriller"],
+    "rating": 4,
+    "country": "USA",
+    "duration": 122,
+    "directors": [
+      { "firstName": "Todd", "lastName": "Phillips" }
+    ],    
+    "synopsis": {
+      "short": "A failed comedian descends into madness and becomes the iconic villain.",
+      "long": "An alienated man descends into madness and chaos, becoming the iconic villain known as the Joker, exploring themes of mental illness and societal neglect."
+    },     
+    "images": {
+      "thumbnail": "/images_thumb/joker.jpg",
+      "large": "/images_large/joker.jpg"
+    }     
+  },
+  {
+    "id": "movie041",
+    "title": "Parasite",
+    "year": 2019,
+    "genres": ["drama", "thriller"],
+    "rating": 5,
+    "country": "South Korea",
+    "duration": 132,
+    "directors": [
+      { "firstName": "Bong", "lastName": "Joon-ho" }
+    ],    
+    "synopsis": {
+      "short": "A poor family schemes to become employed by a wealthy family by infiltrating their household.",
+      "long": "A poor family schemes to infiltrate a wealthy household by posing as unrelated, highly qualified workers, but their plan leads to unexpected consequences and dark social commentary."
+    },       
+    "images": {
+      "thumbnail": "/images_thumb/parasite.jpg",
+      "large": "/images_large/parasite.jpg"
+    }         
+  },
+  {
+    "id": "movie042",
+    "title": "1917",
+    "year": 2019,
+    "genres": ["drama", "war"],
+    "rating": 4,
+    "country": "UK",
+    "duration": 119,
+    "directors": [
+      { "firstName": "Sam", "lastName": "Mendes" }
+    ],    
+    "synopsis": {
+      "short": "Two British soldiers are tasked with delivering a message to prevent a doomed attack during WWI.",
+      "long": "During World War I, two young British soldiers are tasked with delivering a message to save a battalion from walking into a deadly trap, facing relentless danger in enemy territory."
+    },    
+    "images": {
+      "thumbnail": "/images_thumb/1917.jpg",
+      "large": "/images_large/1917.jpg"
+    }    
+  },
+  {
+    "id": "movie043",
+    "title": "Ford v Ferrari",
+    "year": 2019,
+    "genres": ["biography", "drama", "sport"],
+    "rating": 4,
+    "country": "USA",
+    "duration": 152,
+    "directors": [
+      { "firstName": "James", "lastName": "Mangold" }
+    ],    
+    "synopsis": {
+      "short": "American car designer teams up with a driver to build a revolutionary race car for Ford.",
+      "long": "Based on a true story, visionary car designer Carroll Shelby and fearless driver Ken Miles team up to build a revolutionary race car for Ford to defeat Ferrari at the 1966 Le Mans."
+    },       
+    "images": {
+      "thumbnail": "/images_thumb/ford_v_ferrari.jpg",
+      "large": "/images_large/ford_v_ferrari.jpg"
+    }     
+  },
+  {
+    "id": "movie044",
+    "title": "The Irishman",
+    "year": 2019,
+    "genres": ["biography", "crime", "drama"],
+    "rating": 4,
+    "country": "USA",
+    "duration": 209,
+    "directors": [
+      { "firstName": "Martin", "lastName": "Scorsese" }
+    ],    
+    "synopsis": {
+      "short": "A mob hitman recalls his possible involvement with the disappearance of Jimmy Hoffa.",
+      "long": "An aging hitman reflects on his life, involvement with organized crime, and connections to political figures, exploring loyalty, regret, and the passage of time."
+    },     
+    "images": {
+      "thumbnail": "/images_thumb/irishman.jpg",
+      "large": "/images_large/irishman.jpg"
+    }      
+  },
+  {
+    "id": "movie045",
+    "title": "Once Upon a Time in Hollywood",
+    "year": 2019,
+    "genres": ["comedy", "drama"],
+    "rating": 4,
+    "country": "USA",
+    "duration": 161,
+    "directors": [
+      { "firstName": "Quentin", "lastName": "Tarantino" }
+    ],    
+    "synopsis": {
+      "short": "An aging actor and his stunt double navigate the changing film industry in 1969 LA.",
+      "long": "In 1969 Los Angeles, an aging TV actor and his stunt double navigate a changing film industry while their lives intersect with real historical events and figures."
+    },    
+    "images": {
+      "thumbnail": "/images_thumb/once_upon_a_time_in_hollywood.jpg",
+      "large": "/images_large/once_upon_a_time_in_hollywood.jpg"
+    }          
+  },
+  {
+    "id": "movie046",
+    "title": "Dunkirk",
+    "year": 2017,
+    "genres": ["drama", "war"],
+    "rating": 4,
+    "country": "UK",
+    "duration": 106,
+    "directors": [
+      { "firstName": "Christopher", "lastName": "Nolan" }
+    ],    
+    "synopsis": {
+      "short": "Allied soldiers are evacuated from the beaches of Dunkirk during WWII.",
+      "long": "Allied soldiers are evacuated from the beaches of Dunkirk, France, under heavy enemy fire during World War II, told through multiple perspectives of land, sea, and air."
+    },      
+    "images": {
+      "thumbnail": "/images_thumb/dunkirk.jpg",
+      "large": "/images_large/dunkirk.jpg"
+    }      
+  },  
+  {
+    "id": "movie047",
+    "title": "The Revenant",
+    "year": 2015,
+    "genres": ["adventure", "drama", "thriller"],
+    "rating": 4,
+    "country": "USA",
+    "duration": 156,
+    "directors": [
+      { "firstName": "Alejandro", "lastName": "González Iñárritu" }
+    ],    
+    "synopsis": {
+      "short": "A frontiersman fights for survival after being mauled by a bear and left for dead.",
+      "long": "After being left for dead following a bear attack, frontiersman Hugh Glass fights for survival and vengeance in the harsh wilderness of the American frontier."
+    },      
+    "images": {
+      "thumbnail": "/images_thumb/revenant.jpg",
+      "large": "/images_large/revenant.jpg"
+    }        
+  },
+  {
+    "id": "movie048",
+    "title": "Birdman",
+    "year": 2014,
+    "genres": ["comedy", "drama"],
+    "rating": 4,
+    "country": "USA",
+    "duration": 119,
+    "directors": [
+      { "firstName": "Alejandro", "lastName": "González Iñárritu" }
+    ],    
+    "synopsis": {
+      "short": "A washed-up actor tries to revive his career by directing a Broadway play.",
+      "long": "A washed-up actor famous for playing a superhero attempts to revive his career by directing a Broadway play, grappling with his ego, identity, and personal demons."
+    },        
+    "images": {
+      "thumbnail": "/images_thumb/birdman.jpg",
+      "large": "/images_large/birdman.jpg"
+    }     
+  },
+  {
+    "id": "movie049",
+    "title": "Her",
+    "year": 2013,
+    "genres": ["drama", "romance", "sci-fi"],
+    "rating": 4,
+    "country": "USA",
+    "duration": 126,
+    "directors": [
+      { "firstName": "Spike", "lastName": "Jonze" }
+    ],    
+    "synopsis": {
+      "short": "A lonely writer develops an unusual relationship with an operating system designed to meet his every need.",
+      "long": "In a near future, a lonely writer develops an emotional relationship with an advanced artificial intelligence operating system, exploring love and human connection in a digital age."
+    },       
+    "images": {
+      "thumbnail": "/images_thumb/her.jpg",
+      "large": "/images_large/her.jpg"
+    }       
+  },
+  {
+    "id": "movie050",
+    "title": "Moonlight",
+    "year": 2016,
+    "genres": ["drama"],
+    "rating": 5,
+    "country": "USA",
+    "duration": 111,
+    "directors": [
+      { "firstName": "Barry", "lastName": "Jenkins" }
+    ],    
+    "synopsis": {
+      "short": "A young man grapples with his identity and sexuality while growing up in a rough neighborhood.",
+      "long": "A young man grapples with his identity and sexuality while growing up in a rough neighborhood, navigating the complexities of love, family, and self-acceptance."
+    },      
+    "images": {
+      "thumbnail": "/images_thumb/moonlight.jpg",
+      "large": "/images_large/moonlight.jpg"
+    }      
+  }
+]
