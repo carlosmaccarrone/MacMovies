@@ -27,18 +27,29 @@ const LoginForm = () => {
     const userFound = users.find((u) => u.username === username);
 
     if (!userFound || simpleHash(password) !== userFound.password) {
-      setTimeout(() => { 
+      console.log('userFound:', userFound);
+      console.log('password hash:', simpleHash(password));
+      setTimeout(() => {
+        console.log('Timeout negativo: usuario o contraseña incorrectos 1');
         setError('Incorrect username or password');
+        console.log('Timeout negativo: usuario o contraseña incorrectos 2');
         setLoading(false);
+        console.log('Timeout negativo: usuario o contraseña incorrectos 3');
       }, 400);
     } else {
-      setTimeout(() => { 
+      console.log('userFound:', userFound);
+      console.log('password hash:', simpleHash(password));      
+      setTimeout(() => {
+        console.log('Timeout positivo: login exitoso 1, username:', userFound.username);
         setLoading(false);
+        console.log('Timeout positivo: login exitoso 2, username:', userFound.username);
         login(userFound.username); 
+        console.log('Timeout positivo: login exitoso 3, username:', userFound.username);
         navigate('/home');
       }, 400);
     }
   } catch (err) {
+    console.error('Error en timeout positivo:', err);
     setError('Error connecting to the server');
     setLoading(false);
     }
