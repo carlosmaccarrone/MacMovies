@@ -5,15 +5,15 @@ function LoginSidebar() {
   const [users, setUsers] = useState([]);
 
   const footerText = `
-  Welcome to the podium of the best movie ratings and reviews.
-  Here, you can explore carefully curated movie data, all in one place.
-  Use the demo users listed above to log in quickly and test the features.
-  MacMovies is thoughtfully designed to provide a seamless, intuitive, and 
-  thoroughly enjoyable experience for every passionate movie lover.
-  Created and carefully maintained by Carlos Maccarrone, a dedicated 
-  developer committed to delivering quality and innovation.
-  We’re constantly improving the app, adding new features and movies to discover.
-  Feel free to share your feedback and suggestions to help us grow.
+  Welcome to the podium of top movie ratings and reviews.  
+  Discover carefully curated movie data from TMDb, all in one spot.  
+  Use the demo users above to log in quickly and explore features.  
+  MacMovies is designed to deliver a seamless, intuitive, and  
+  truly enjoyable experience for every passionate movie fan.  
+  Created and maintained by Carlos Maccarrone, a dedicated  
+  developer focused on quality, innovation, and clean design.  
+  We’re constantly adding new features and movies to discover.  
+  Share your feedback and suggestions to help us improve and grow.  
   Thank you for being part of the MacMovies community — enjoy the show!
   `;
 
