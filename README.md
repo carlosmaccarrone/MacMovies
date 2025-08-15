@@ -1,5 +1,7 @@
 [![CI](https://github.com/carlosmaccarrone/MacMovies/actions/workflows/ci.yml/badge.svg)](https://github.com/carlosmaccarrone/MacMovies/actions/workflows/ci.yml)
 
+[![Live](https://img.shields.io/badge/Live-Demo-blue)](https://carlosmaccarrone.github.io/MacMovies/)
+
 # MacMovies
 
 A minimal React app demo by **Carlos Maccarrone**.
