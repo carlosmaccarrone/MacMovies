@@ -87,10 +87,10 @@ describe('LoginSidebar component', () => {
     render(<LoginSidebar />);
 
     await screen.findByText((content) =>
-      content.includes('Welcome to the podium of the best movie ratings')
+      content.includes('Welcome to the podium of top movie ratings and reviews')
     );
 
-    expect(screen.getByText((content) => content.includes('best movie'))).toBeInTheDocument();
-    expect(screen.getByText((content) => content.includes('enjoy the show'))).toBeInTheDocument();
+    expect(screen.getByText((content) => content.includes('data from TMDb'))).toBeInTheDocument();
+    expect(screen.getByText((content) => content.includes('clean design'))).toBeInTheDocument();
   });
 });
