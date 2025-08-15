@@ -1,0 +1,53 @@
+.container {
+  position: relative;
+  font-family: 'Varela Round';
+  font-size: 1.5rem;
+  color: #FFD54F;
+  cursor: pointer;
+  user-select: none;
+}
+
+.selected {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 2.2rem;       /* same height as navButton */
+  line-height: 2.2rem;  /* vertically aligns text and ▽ */
+  padding: 0 0.5rem;
+  border-radius: 12px;
+  transition: color 0.2s;
+  background-color: transparent;
+}
+
+.arrow {
+  margin-left: 0.25rem;
+  display: flex;
+  align-items: center;
+}
+
+.options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0; /* occupies the entire width of the container */
+  background-color: rgba(0,0,0,0.9);
+  border-radius: 12px;
+  margin-top: 0.25rem;
+  overflow: hidden;
+  z-index: 20;
+}
+
+.option {
+  padding: 0.25rem 0.5rem;
+  transition: background-color 0.2s;
+}
+
+.option:hover {
+  background-color: rgba(176,0,32,0.4);
+}
+
+.selected:hover {
+  color: #FF5733; /* change the color of the text and the ▽ */
+  /* optional: slightly darker background */
+  background-color: rgba(255,87,51,0.1);
+}

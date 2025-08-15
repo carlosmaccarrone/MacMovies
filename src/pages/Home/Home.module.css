@@ -1,0 +1,44 @@
+.homeContainer {
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+p {
+  color: #FFD54F;
+  font-family: 'Varela Round';
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.heroSlider {
+  width: 100%;
+  max-width: 1200px; /* limit width on desktop */
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .homeContainer {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .heroWrapper {
+    width: 100vw; /* total width of the window */
+    margin-left: calc(0.2 * 0.5rem); /* offsets the padding of homeContainer */
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+  }
+
+  .heroSlider {
+    padding: 0.5rem;
+  }
+}
