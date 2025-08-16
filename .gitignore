@@ -1,5 +1,6 @@
 /node_modules/
 /dist/
+!/dist/404.html
 /.env
 .DS_Store
 npm-debug.log*
