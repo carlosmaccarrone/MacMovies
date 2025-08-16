@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate, Outlet } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate, Outlet } from 'react-router-dom';
 import { useAuth } from '@/contexts/AuthContext';
 import PrivateLayout from '@/PrivateLayout';
 import Login from '@/pages/Login/Login';
@@ -18,7 +18,7 @@ function PublicRoute() {
 
 export default function AppRoutes() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
 
         <Route element={<PublicRoute />}>
@@ -33,6 +33,6 @@ export default function AppRoutes() {
 
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
