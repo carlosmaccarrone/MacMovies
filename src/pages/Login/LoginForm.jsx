@@ -1,11 +1,13 @@
 import styles from '@/pages/Login/LoginForm.module.css';
 import { useAuth } from '@/contexts/AuthContext';
+import { useNavigate } from 'react-router-dom';
 import Logo from '@/components/Logo';
 import { useState } from 'react';
 
 const simpleHash = (str) => btoa(str);
 
 const LoginForm = () => {
+  const navigate = useNavigate();
   const { login } = useAuth();
 
   const [username, setUsername] = useState('');
@@ -31,8 +33,10 @@ const LoginForm = () => {
           setLoading(false);
         }, 400);
       } else {
-        setTimeout(() => {
-          login(userFound.username);
+        setTimeout(() => { 
+          setLoading(false);
+          login(userFound.username); 
+          navigate('/home');
         }, 400);
       }
     } catch (err) {

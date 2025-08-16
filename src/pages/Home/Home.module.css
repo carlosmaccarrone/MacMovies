@@ -8,14 +8,7 @@
   justify-content: flex-start;
 }
 
-/*p {
-  color: #FFD54F;
-  font-family: 'Varela Round';
-  font-size: 1.5rem;
-  margin-top: 2rem;
-}*/
-
-.loadingText {
+p {
   color: #FFD54F;
   font-family: 'Oleo Script';
   font-size: 1.5rem;
@@ -27,9 +20,6 @@
   max-width: 1200px; /* limit width on desktop */
   margin: 0 auto;
   padding: 1rem;
-  color: #FFD54F;
-  font-family: 'Varela Round';
-  font-size: 1.5rem;  
 }
 
 @media (max-width: 768px) {
@@ -43,7 +33,7 @@
     margin-left: calc(0.2 * 0.5rem); /* offsets the padding of homeContainer */
   }
 
-  .loadingText {
+  p {
     font-size: 1.2rem;
     margin-top: 1.5rem;
   }

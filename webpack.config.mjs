@@ -88,8 +88,7 @@ export default {
       /*serveIndex: false,*/ // OPTIONAL: avoid malformed URI shell warning
     },
 /*    hot: false, // HMR attempts to hot-replace your app's modules without reloading the entire page.*/
-/*    liveReload: true, // Enables the page to automatically reload when you change project files. */
-    historyApiFallback: true, // <--- this is what makes BrowserRouter work
+/*    liveReload: true, // Enables the page to automatically reload when you change project files. */   
     compress: true,
     port: 3000,
     open: true

@@ -150,7 +150,7 @@
   .navButton {
     /*margin-left: -15px; */
     /*transform: translateX(-3.5px);*/ /* move 10px to the left without affecting other elements */
-    transform: translateX(-0.55rem);
+    transform: translateX(-0.5rem);
   }
 
   .genreSelect {
