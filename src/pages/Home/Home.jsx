@@ -1,3 +1,4 @@
+import TrendingMoviesGrid from '@/pages/Home/TrendingMoviesGrid';
 import { useEffect, useState, useRef } from 'react';
 import styles from '@/pages/Home/Home.module.css';
 import HeroSlider from '@/pages/Home/HeroSlider';
@@ -45,23 +46,26 @@ export default function Home() {
 
   return (
     <>
-      <Navbar />
-
       <div
         className={styles.homeContainer}
         style={{ paddingTop: `${navbarHeight}px` }}
       >
-        {!trending.length || !topMovie ? (
-          <p>Loading...</p>
-        ) : (
+        {(!trending.length || !topMovie) && (
+          <p className={styles.loadingText}>Loading...</p>
+        )}
 
-          <div className={styles.heroWrapper}>
-            <HeroSlider
-              topMovie={trending[sliderIndex]}
-              handlePrev={handlePrev}
-              handleNext={handleNext}
-            />
-          </div>
+        {trending.length > 0 && topMovie && (
+          <>
+            <div className={styles.heroWrapper}>
+              <HeroSlider
+                topMovie={trending[sliderIndex]}
+                handlePrev={handlePrev}
+                handleNext={handleNext}
+              />
+            </div>
+
+{/*            <TrendingMoviesGrid movies={trending} />*/}
+          </>
         )}
       </div>
     </>
