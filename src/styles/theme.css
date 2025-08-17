@@ -1,6 +1,8 @@
 /* Gradient and textured background for the entire app or as many pages as you want */
 body, #root {
-  min-height: 100vh;
+/*  min-height: 100vh;*/
+/*min-height: 100dvh;*/
+  height: 100%;
   margin: 0;
   background: 
     url("https://www.transparenttextures.com/patterns/maze-black.png"),
