@@ -5,16 +5,18 @@ import Spinner from '@/components/Spinner';
 import Login from '@/pages/Login/Login';
 import Home from '@/pages/Home/Home';
 
-function PrivateRoute() {
+function AuthRoute({ checkAuth, redirectTo }) {
   const { isLogged, loading } = useAuth();
-  if (loading) return <Spinner />
-  return isLogged ? <Outlet /> : <Navigate to="/" replace />;
+  if (loading) return <Spinner />;
+  return checkAuth(isLogged) ? <Outlet /> : <Navigate to={redirectTo} replace />;
+}
+
+function PrivateRoute() {
+  return <AuthRoute checkAuth={(isLogged) => isLogged} redirectTo="/" />;
 }
 
 function PublicRoute() {
-  const { isLogged, loading } = useAuth();
-  if (loading) return <Spinner />
-  return !isLogged ? <Outlet /> : <Navigate to="/home" replace />;
+  return <AuthRoute checkAuth={(isLogged) => !isLogged} redirectTo="/home" />;
 }
 
 export default function AppRoutes() {
