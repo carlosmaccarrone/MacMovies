@@ -19,7 +19,7 @@ const LoginForm = () => {
     setError('');
 
     try {
-      const response = await fetch('/users.json', { cache: 'no-store' });
+      const response = await fetch('./users.json', { cache: 'no-store' });
       if (!response.ok) throw new Error('Error fetching users');
       const users = await response.json();
 

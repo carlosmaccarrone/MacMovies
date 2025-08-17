@@ -1,6 +1,6 @@
 import { Routes, Route, Navigate, Outlet } from 'react-router-dom';
-import { useAuth } from '@/contexts/AuthContext';
 import PrivateLayout from '@/layouts/PrivateLayout';
+import { useAuth } from '@/contexts/AuthContext';
 import Login from '@/pages/Login/Login';
 import Home from '@/pages/Home/Home';
 
