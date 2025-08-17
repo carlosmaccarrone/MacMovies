@@ -1,10 +1,10 @@
 .movieGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 20px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  grid-template-columns: repeat(6, 1fr); /* ajustable */
+  gap: 1rem;
+  margin-top: 2rem; /* asegura que no tape el slider */
+  position: relative; /* no absoluto */
+  z-index: 1;
 }
 
 .movieCard {

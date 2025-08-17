@@ -20,15 +20,18 @@ export default function Home() {
     getTrending();
   }, []);
 
+  console.log(trending)
+
   return (
     <div className={styles.homeWrapper}>
       {!trending.length && <Spinner />}
 
-      {
-        trending.length > 0 && 
-        <HeroSlider movies={trending} />
-      }
-      {/*trending.length > 0 && <TrendingMoviesGrid movies={trending} />*/}
+      {trending.length > 0 && (
+        <>
+          <HeroSlider movies={trending} />
+          <TrendingMoviesGrid movies={trending} />
+        </>
+      )}
     </div>
   );
 }

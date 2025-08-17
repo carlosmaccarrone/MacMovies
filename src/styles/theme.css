@@ -1,25 +1,35 @@
-/* Gradient and textured background for the entire app or as many pages as you want */
 body, #root {
-/*  min-height: 100vh;*/
-/*min-height: 100dvh;*/
-  height: 100%;
+  min-height: 100vh;       /* at least the height of the window */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   margin: 0;
+  padding: 0;
+  overflow-x: hidden;       /* avoid horizontal scrolling */
+  overflow-y: auto;         /* scroll if content exceeds */
+
   background: 
-    url("https://www.transparenttextures.com/patterns/maze-black.png"),
+    url("https://www.transparenttextures.com/patterns/maze-black.png") repeat,
     linear-gradient(135deg, #000000 0%, #b00020 40%, #000000 100%);
-  background-size: auto, cover; /* texture: auto, gradient: cover */
-  background-blend-mode: multiply; /* Mix the texture with the gradient */
+  background-size: auto, cover;
+  background-blend-mode: multiply;
   color: #fff;
-  /*position: relative; /* needed for the pseudo-element */
   font-family: Arial, sans-serif;
+  position: relative;       /* needed for pseudo-element */
 }
 
-/* Global semi-transparent dark layer */
 body::before {
   content: '';
-  position: fixed; /* fixed so that it covers the entire window */
-  inset: 0;
-  background: rgba(0, 0, 0, 0.2); /* semi-transparent black cape */
-  pointer-events: none; /* so that it does not interfere with clicks, hover, etc */
-  z-index: -1; /* element falls behind everything with z-index 0 or higher */
+  position: fixed;
+  inset: 0;  
+ /* position: absolute; */      /* relative to the layout */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;             /* covers the entire layout, even if it grows */
+  background: rgba(0,0,0,0.2);
+  pointer-events: none;
+  z-index: -1;
+  will-change: transform;      /* hint para GPU */
+  transform: translateZ(0);    /* fuerza capa independiente */  
 }

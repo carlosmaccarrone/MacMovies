@@ -4,7 +4,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start; /* stick to the top */
-  padding-top: 1rem; /* initial adjustment */
+/*  padding-top: 200px;*/ /* initial adjustment */
+  overflow: visible;
+  min-height: 300px;
+  /*max-height: 100vh;*/ /* o 450px, según prefieras */
 }
 
 @media (min-width: 769px) {
