@@ -72,7 +72,7 @@
 @media (max-width: 768px) {
   .hero {
     max-height: 300px;
-    margin-top: -6rem;    
+    margin-top: 0;    
   }
 
   .heroImage {
