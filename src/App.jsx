@@ -4,11 +4,11 @@ import AppRoutes from '@/AppRoutes';
 
 function App() {
   return (
-    <BrowserRouter>
-    	<HashRouter>
+    <AuthProvider>
+    	<BrowserRouter>
       	<AppRoutes />
-    	</HashRouter>
-    </BrowserRouter>
+    	</BrowserRouter>
+    </AuthProvider>
   );
 }
 
