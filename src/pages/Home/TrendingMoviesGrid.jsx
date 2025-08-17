@@ -1,4 +1,4 @@
-import styles from '@/pages/Home/Home.module.css';
+import styles from '@/pages/Home/TrendingMoviesGrid.module.css';
 
 const TrendingMoviesGrid = ({ movies }) => {
   return (

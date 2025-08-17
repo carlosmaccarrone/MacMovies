@@ -1,10 +1,10 @@
-.hero {
+  .hero {
   position: relative;
   width: 100%;
   max-height: 450px;
   overflow: hidden;
   border-radius: 12px;
-  background-color: #111;
+  margin-top: 3.8rem;
 }
 
 .heroImage {
@@ -72,6 +72,7 @@
 @media (max-width: 768px) {
   .hero {
     max-height: 300px;
+    margin-top: -6rem;    
   }
 
   .heroImage {

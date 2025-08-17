@@ -1,23 +1,26 @@
 import styles from '@/pages/Home/HeroSlider.module.css';
 import { useState } from 'react';
 
-const HeroSlider = ({ topMovie, handlePrev, handleNext }) => {
+const HeroSlider = ({ movies }) => {
+  const [sliderIndex, setSliderIndex] = useState(0);
   const [imageLoaded, setImageLoaded] = useState(false);
   const [blocked, setBlocked] = useState(false);
 
-  if (!topMovie) return null;
+  if (!movies || movies.length === 0) return null;
+
+  const topMovie = movies[sliderIndex];
 
   const safePrev = () => {
     if (!imageLoaded || blocked) return;
     setBlocked(true);
-    handlePrev();
+    setSliderIndex(prev => (prev === 0 ? movies.length - 1 : prev - 1));
     setTimeout(() => setBlocked(false), 400);
   };
 
   const safeNext = () => {
     if (!imageLoaded || blocked) return;
     setBlocked(true);
-    handleNext();
+    setSliderIndex(prev => (prev === movies.length - 1 ? 0 : prev + 1));
     setTimeout(() => setBlocked(false), 400);
   };
 
@@ -47,6 +50,6 @@ const HeroSlider = ({ topMovie, handlePrev, handleNext }) => {
       </div>
     </div>
   );
-}
+};
 
 export default HeroSlider;

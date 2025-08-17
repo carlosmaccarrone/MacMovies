@@ -1,15 +1,12 @@
 import TrendingMoviesGrid from '@/pages/Home/TrendingMoviesGrid';
-import { useEffect, useState, useRef } from 'react';
 import styles from '@/pages/Home/Home.module.css';
 import HeroSlider from '@/pages/Home/HeroSlider';
 import { fetchFromTMDb } from '@/utils/tmdb';
-import Navbar from '@/components/Navbar'
+import { useEffect, useState } from 'react';
+import Spinner from '@/components/Spinner'
 
 export default function Home() {
   const [trending, setTrending] = useState([]);
-  const [sliderIndex, setSliderIndex] = useState(0);
-  const [navbarHeight, setNavbarHeight] = useState(0);
-  const navbarRef = useRef(null);
 
   useEffect(() => {
     async function getTrending() {
@@ -23,51 +20,15 @@ export default function Home() {
     getTrending();
   }, []);
 
-  useEffect(() => {
-    const updateNavbarHeight = () => {
-      const navbar = document.querySelector('header'); // navbar is fixed
-      if (navbar) setNavbarHeight(navbar.offsetHeight);
-    };
-
-    updateNavbarHeight();
-    window.addEventListener('resize', updateNavbarHeight);
-    return () => window.removeEventListener('resize', updateNavbarHeight);
-  }, []);
-
-  const handlePrev = () => {
-    setSliderIndex((prev) => (trending.length ? (prev === 0 ? trending.length - 1 : prev - 1) : 0));
-  };
-
-  const handleNext = () => {
-    setSliderIndex((prev) => (trending.length ? (prev === trending.length - 1 ? 0 : prev + 1) : 0));
-  };
-
-  const topMovie = trending[sliderIndex] || null;
-
   return (
-    <>
-      <div
-        className={styles.homeContainer}
-        style={{ paddingTop: `${navbarHeight}px` }}
-      >
-        {(!trending.length || !topMovie) && (
-          <p className={styles.loadingText}>Loading...</p>
-        )}
+    <div className={styles.homeWrapper}>
+      {!trending.length && <Spinner />}
 
-        {trending.length > 0 && topMovie && (
-          <>
-            <div className={styles.heroWrapper}>
-              <HeroSlider
-                topMovie={trending[sliderIndex]}
-                handlePrev={handlePrev}
-                handleNext={handleNext}
-              />
-            </div>
-
-{/*            <TrendingMoviesGrid movies={trending} />*/}
-          </>
-        )}
-      </div>
-    </>
+      {
+        trending.length > 0 && 
+        <HeroSlider movies={trending} />
+      }
+      {/*trending.length > 0 && <TrendingMoviesGrid movies={trending} />*/}
+    </div>
   );
 }

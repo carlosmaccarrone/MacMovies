@@ -1,0 +1,58 @@
+.spinner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4rem;   /* space from the top */
+  min-height: 60vh; /* makes it vertically centered */  
+  color: #FFD54F;
+  font-family: 'Oleo Script', cursive;
+  font-size: 1.5rem;
+}
+
+.spinner {
+  border: 6px solid rgba(0,0,0,0.1); /* light gray border */
+  border-top: 6px solid #FFD54F; /* main color border */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 20px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-text {
+  color: #FFD54F;
+  font-family: 'Oleo Script', cursive;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .spinner-container {
+    min-height: calc(100vh - var(--navbar-height));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 10rem;
+  }
+
+  .spinner {
+    width: 50px;
+    height: 50px;
+    border-width: 5px;
+    margin-bottom: 15px;
+  }
+
+  .loadingText {
+    color: #FFD54F;
+    font-family: 'Oleo Script', cursive;    
+    font-size: 1.2rem;
+    margin-top: 8px;
+  }
+}
