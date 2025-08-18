@@ -1,0 +1,77 @@
+.container {
+  display: flex;
+  flex-direction: column; /* móvil: poster arriba, detalles abajo */
+  gap: 2rem;
+  padding: 2rem;
+  margin-top: 19rem;  /* espacio para navbar en mobile */
+  align-items: center;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.container::-webkit-scrollbar {
+  width: 0px;
+  background: none;
+}
+
+.poster {
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  width: 80%;
+  max-width: 300px;
+  height: auto;
+}
+
+.details {
+  all: unset;
+  display: flex;
+  flex-direction: column;
+  background: rgba(0,0,0,0.3);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  width: 100%;
+  max-width: 700px;
+  font-family: 'Varela Round', sans-serif;
+  color: #FFD54F;
+}
+
+.details strong {
+  color: #FF5733;
+}
+
+.title {
+  font-family: 'Dancing Script', cursive;
+  color: #FFD54F;    
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.overview {
+  font-family: 'Varela Round';
+  color: #FFD54F;  
+  opacity: 0.8;
+  margin-bottom: 1rem;
+}
+
+.cast {
+  margin-top: 1rem;
+}
+
+.castList {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2rem;
+    padding: 3rem;
+    margin-top: 6rem;  /* espacio para que la navbar no tape */
+    max-height: calc(100vh - 6rem); /* importante para que aparezca scrollbar */    
+    overflow-y: auto;    
+  }
+}
+

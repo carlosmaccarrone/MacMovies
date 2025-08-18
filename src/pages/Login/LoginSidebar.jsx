@@ -39,6 +39,7 @@ function LoginSidebar() {
     <div className={styles.sidebarContainer}>
       <h3>Movie Lovers from MacMovies</h3>
       <div className={styles.tableWrapper}>
+
         <table>
           <thead>
             <tr>
@@ -56,6 +57,7 @@ function LoginSidebar() {
           </tbody>
         </table>
       </div>
+      <div className={styles.scrollHint}></div>
       <p className={styles.footerNote}>
         {footerText}
       </p>

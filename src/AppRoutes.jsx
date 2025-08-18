@@ -1,4 +1,5 @@
 import { Routes, Route, Navigate, Outlet } from 'react-router-dom';
+import MovieDetail from '@/pages/MovieDetail/MovieDetail';
 import PrivateLayout from '@/layouts/PrivateLayout';
 import { useAuth } from '@/contexts/AuthContext';
 import Spinner from '@/components/Spinner';
@@ -30,6 +31,7 @@ export default function AppRoutes() {
       <Route element={<PrivateRoute />}>
         <Route element={<PrivateLayout />}>
           <Route path="/home" element={<Home />} />
+          <Route path="/movie/:id" element={<MovieDetail />} />
         </Route>
       </Route>
 

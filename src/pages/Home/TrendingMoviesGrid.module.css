@@ -6,14 +6,17 @@
   padding: 0 1rem; /* prevents posters from being cut */
   position: relative;
   z-index: 1;
-  /*overflow-y: auto;*/ /* enable vertical scrolling if necessary */
+  /*overflow-y: auto;*/ /* enable vertical scrolling if necessary */ 
 }
 
-.movieCard {
-  display: flex;
+.movieCard a {
+  all: unset;          /* removes all inherited styles from the link */
+  display: flex;       /* optional: let the a continue to occupy the space */
   flex-direction: column;
   align-items: center;
   text-align: center;
+  width: 100%;         /* important for the card to occupy the entire width of the cell */
+  cursor: pointer;     /* link pointer */
 }
 
 .movieCard img {
@@ -22,6 +25,13 @@
   border-radius: 8px;
   margin-bottom: 8px;
   object-fit: cover;
+}
+
+.movieCard h3, 
+.movieCard p {
+  font-family: 'Varela Round';
+  color: #FFD54F;
+  margin: 0;
 }
 
 @media (max-width: 768px) {

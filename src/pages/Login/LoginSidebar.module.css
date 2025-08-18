@@ -60,6 +60,40 @@
   overflow-y: auto;
   border-radius: 12px; /* optional: so that the board is not cut with a round edge */
   -webkit-overflow-scrolling: touch; /* to smoothed scroll in iOS */
+  scrollbar-width: thin; /* optional: "none" to hide*/
+  scrollbar-color: transparent transparent; /* transparent track and thumb */  
+}
+
+.tableWrapper::-webkit-scrollbar {
+  width: 0px; /* makes the bar invisible */
+  background: transparent;  /* optional, transparent track */
+}
+
+.tableWrapper::-webkit-scrollbar-thumb {
+  background: transparent;  /* optional, transparent thumb */
+}
+
+.scrollHint {
+  font-size: 0.85rem;
+  color: #FFD54F;
+  text-align: center;
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.scrollHint::after {
+  content: "⬇ Scroll ⬇";
+  font-size: 0.8rem;
+  opacity: 0.7;
+  animation: bounce 1.2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(4px); }
 }
 
 .footerNote {
@@ -85,5 +119,4 @@
     max-height: none; /* so that it does not limit the height on mobile */
     margin: 0 auto;
   }
-
 }

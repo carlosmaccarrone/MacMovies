@@ -34,7 +34,7 @@ const Navbar = () => {
       </div>
 
       <div className={styles.userControls}>
-        <button className={styles.userButton}>USER</button>
+        <button className={styles.userButton}>USER</button>      
         <button className={styles.logoutButton}>LOGOUT</button>
       </div>
     </header>

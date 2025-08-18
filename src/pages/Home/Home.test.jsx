@@ -13,7 +13,6 @@ await jest.unstable_mockModule('@/utils/tmdb', () => ({
   fetchFromTMDb: jest.fn()
 }));
 
-// importamos los módulos ya mockeados
 const { default: Home } = await import('@/pages/Home/Home');
 const { fetchFromTMDb } = await import('@/utils/tmdb');
 const HeroSlider = (await import('@/pages/Home/HeroSlider')).default;
@@ -23,7 +22,6 @@ describe('Home component', () => {
   let consoleErrorSpy;
 
   beforeAll(() => {
-    // silenciamos console.error durante los tests
     consoleErrorSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
   });
 
