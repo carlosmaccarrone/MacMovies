@@ -3,7 +3,7 @@
   flex-direction: column; /* móvil: poster arriba, detalles abajo */
   gap: 2rem;
   padding: 2rem;
-  margin-top: 19rem;  /* espacio para navbar en mobile */
+  margin-top: 14.5rem;  /* espacio para navbar en mobile */
   align-items: center;
   overflow-y: auto;
   scrollbar-width: none;
