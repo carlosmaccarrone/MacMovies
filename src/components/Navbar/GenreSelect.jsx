@@ -1,4 +1,4 @@
-import styles from "@/components/GenreSelect.module.css";
+import styles from "@/components/Navbar/GenreSelect.module.css";
 import { useState } from "react";
 
 const GenreSelect = ({ genres, className }) => {

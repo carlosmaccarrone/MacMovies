@@ -1,8 +1,8 @@
 import styles from "@/pages/MovieDetail/MovieDetail.module.css";
+import Spinner from "@/components/Spinner/Spinner";
 import { useLocation } from "react-router-dom";
 import { fetchFromTMDb } from "@/utils/tmdb";
 import { useState, useEffect } from "react";
-import Spinner from "@/components/Spinner";
 
 const MovieDetail = ({ movieProp, fetchMovie = fetchFromTMDb, skipImageLoad }) => {
   const location = movieProp ? null : useLocation();

@@ -1,8 +1,8 @@
 import { Routes, Route, Navigate, Outlet } from 'react-router-dom';
 import MovieDetail from '@/pages/MovieDetail/MovieDetail';
 import PrivateLayout from '@/layouts/PrivateLayout';
+import Spinner from '@/components/Spinner/Spinner';
 import { useAuth } from '@/contexts/AuthContext';
-import Spinner from '@/components/Spinner';
 import Login from '@/pages/Login/Login';
 import Home from '@/pages/Home/Home';
 

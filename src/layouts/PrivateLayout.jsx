@@ -1,7 +1,7 @@
 import { useState, useRef, useLayoutEffect } from 'react';
+import styles from '@/layouts/PrivateLayout.module.css';
+import Navbar from '@/components/Navbar/Navbar';
 import { Outlet } from 'react-router-dom';
-import Navbar from '@/components/Navbar';
-import styles from './PrivateLayout.module.css';
 
 export default function PrivateLayout() {
   const navbarRef = useRef(null);

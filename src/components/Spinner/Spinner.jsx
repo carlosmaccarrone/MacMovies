@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import styles from './Spinner.module.css'; // CSS Module
+import styles from '@/components/Spinner/Spinner.module.css'; // CSS Module
 
 export default function Spinner() {
   const [dots, setDots] = useState('');

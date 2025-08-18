@@ -1,5 +1,5 @@
-import GenreSelect from "@/components/GenreSelect";
-import styles from "./Navbar.module.css";
+import styles from "@/components/Navbar/Navbar.module.css";
+import GenreSelect from "@/components/Navbar/GenreSelect";
 import Logo from '@/components/Logo';
 
 const genres = [

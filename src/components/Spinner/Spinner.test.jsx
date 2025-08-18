@@ -1,6 +1,6 @@
 import { render, screen, act } from '@testing-library/react';
 import { jest } from '@jest/globals';
-import Spinner from './Spinner';
+import Spinner from '@/components/Spinner/Spinner';
 
 jest.useFakeTimers();
 

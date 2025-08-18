@@ -1,9 +1,9 @@
 import TrendingMoviesGrid from '@/pages/Home/TrendingMoviesGrid';
+import Spinner from '@/components/Spinner/Spinner';
 import styles from '@/pages/Home/Home.module.css';
 import HeroSlider from '@/pages/Home/HeroSlider';
 import { fetchFromTMDb } from '@/utils/tmdb';
 import { useEffect, useState } from 'react';
-import Spinner from '@/components/Spinner'
 
 export default function Home() {
   const [trending, setTrending] = useState([]);

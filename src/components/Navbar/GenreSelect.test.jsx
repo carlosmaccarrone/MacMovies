@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from "@testing-library/react";
-import GenreSelect from "./GenreSelect";
+import GenreSelect from "@/components/Navbar/GenreSelect";
 
 const genres = [
   { value: "28", name: "Action" },

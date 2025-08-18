@@ -9,7 +9,7 @@
   min-height: 300px;
   /*max-height: 100vh;*/ /* o 450px, según prefieras */
   font-family: 'Varela Round';
-  color: #FFD54F;    
+  color: #FFD54F;
 }
 
 @media (min-width: 769px) {
