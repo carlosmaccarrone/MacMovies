@@ -1,10 +1,12 @@
 .movieGrid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr); /* ajustable */
+  grid-template-columns: repeat(6, 1fr); /* Desktop: 6 columns */
   gap: 1rem;
-  margin-top: 2rem; /* asegura que no tape el slider */
-  position: relative; /* no absoluto */
+  margin-top: 2rem;
+  padding: 0 1rem; /* prevents posters from being cut */
+  position: relative;
   z-index: 1;
+  /*overflow-y: auto;*/ /* enable vertical scrolling if necessary */
 }
 
 .movieCard {
@@ -16,6 +18,16 @@
 
 .movieCard img {
   width: 100%;
+  height: auto;
   border-radius: 8px;
   margin-bottom: 8px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .movieGrid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    max-height: 80vh; /* limit height for scroll to appear */
+    overflow-y: auto; /* only vertical scroll on mobile */
+  }
 }

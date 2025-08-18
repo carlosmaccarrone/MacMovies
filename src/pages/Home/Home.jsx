@@ -20,8 +20,6 @@ export default function Home() {
     getTrending();
   }, []);
 
-  console.log(trending)
-
   return (
     <div className={styles.homeWrapper}>
       {!trending.length && <Spinner />}
