@@ -29,5 +29,6 @@
     grid-template-columns: repeat(2, 1fr); /* 2 columns */
     max-height: 80vh; /* limit height for scroll to appear */
     overflow-y: auto; /* only vertical scroll on mobile */
+    margin-top: 0.75rem;
   }
 }
