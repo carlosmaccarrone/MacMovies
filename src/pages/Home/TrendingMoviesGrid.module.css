@@ -1,5 +1,6 @@
 .movieGrid {
   display: grid;
+  list-style: none;
   grid-template-columns: repeat(6, 1fr); /* Desktop: 6 columns */
   gap: 1rem;
   margin-top: 2rem;
