@@ -15,7 +15,7 @@
 .heroPlaceholder {
   width: 100%;
   height: 100%;
-  min-height: 450px; /* mismo alto que la imagen */
+  min-height: 450px; /* same height as the image */
   background: #111;
   display: flex;
   align-items: center;
@@ -93,7 +93,7 @@
   }
 
   .heroPlaceholder {
-    min-height: 250px;
+    min-height: 236.5px;
   }
 
   .heroText {
