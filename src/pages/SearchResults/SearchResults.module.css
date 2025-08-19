@@ -1,0 +1,26 @@
+.container {
+  padding-top: 100px;      /* space for navbar */
+  padding-bottom: 4rem;   /* reasonable bottom space */
+  box-sizing: border-box;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.notFound {
+  font-family: 'Oleo Script', cursive;  
+  color: #FFD54F;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-top: 16rem;
+    padding-bottom: 2rem;
+  }
+
+  .notFound {
+	padding-bottom: 10rem;
+  }
+}

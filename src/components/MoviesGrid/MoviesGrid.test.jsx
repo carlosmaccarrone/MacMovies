@@ -1,4 +1,4 @@
-import MoviesGrid from '@/pages/Home/MoviesGrid';
+import MoviesGrid from '@/components/MoviesGrid/MoviesGrid';
 import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 
@@ -20,13 +20,14 @@ afterAll(() => {
 });
 
 describe('MoviesGrid component', () => {
-  test('renders nothing if movies array is empty', () => {
-    const { container } = render(
+  test('renders "No movies found." if movies array is empty', () => {
+    render(
       <MemoryRouter>
         <MoviesGrid movies={[]} />
       </MemoryRouter>
     );
-    expect(container.firstChild).toBeNull();
+    
+    expect(screen.getByText(/no movies found/i)).toBeInTheDocument();
   });
 
   test('renders the correct number of movie cards', () => {

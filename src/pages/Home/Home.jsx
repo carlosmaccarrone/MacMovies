@@ -1,7 +1,7 @@
+import MoviesGrid from '@/components/MoviesGrid/MoviesGrid';
 import Spinner from '@/components/Spinner/Spinner';
 import styles from '@/pages/Home/Home.module.css';
 import HeroSlider from '@/pages/Home/HeroSlider';
-import MoviesGrid from '@/pages/Home/MoviesGrid';
 import { fetchFromTMDb } from '@/utils/tmdb';
 import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';

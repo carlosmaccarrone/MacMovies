@@ -5,7 +5,7 @@ import { jest } from '@jest/globals';
 await jest.unstable_mockModule('@/pages/Home/HeroSlider', () => ({
   default: ({ movies }) => <div>HeroSliderMock {movies.length} movies</div>,
 }));
-await jest.unstable_mockModule('@/pages/Home/MoviesGrid', () => ({
+await jest.unstable_mockModule('@/components/MoviesGrid/MoviesGrid', () => ({
   default: ({ movies }) => <div>MoviesGridMock {movies.length} movies</div>,
 }));
 await jest.unstable_mockModule('@/components/Spinner/Spinner', () => ({
@@ -14,7 +14,7 @@ await jest.unstable_mockModule('@/components/Spinner/Spinner', () => ({
 
 const { default: Home } = await import('@/pages/Home/Home');
 
-describe("Home Smoke Tests", () => {
+describe("Home Tests", () => {
   let consoleErrorSpy;
 
   beforeAll(() => {
@@ -51,7 +51,7 @@ describe("Home Smoke Tests", () => {
     expect(screen.getByRole("status")).toHaveTextContent("SpinnerMock");
   });
 
-  test("renders HeroSlider and MoviesGrid after fetching movies (simulado)", async () => {
+  test("renders HeroSlider and MoviesGrid after fetching movies (simulated)", async () => {
     // simulates that Home starts without movies
     render(
       <MemoryRouter>

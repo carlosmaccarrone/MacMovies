@@ -1,4 +1,4 @@
-import styles from '@/pages/Home/MoviesGrid.module.css';
+import styles from '@/components/MoviesGrid/MoviesGrid.module.css';
 import { Link } from 'react-router-dom';
 
 const MovieCard = ({ movie }) => {
@@ -24,7 +24,10 @@ const MovieCard = ({ movie }) => {
 };
 
 const MoviesGrid = ({ movies }) => {
-  if (!movies || movies.length === 0) return null;
+  if (!movies || movies.length === 0) {
+    return <p className={styles.notFound}>No movies found.</p>;
+  }
+  
   return (
     <ul className={styles.movieGrid}>
       {movies.map((movie) => (

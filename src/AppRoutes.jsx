@@ -1,4 +1,5 @@
 import { Routes, Route, Navigate, Outlet } from 'react-router-dom';
+import SearchResults from '@/pages/SearchResults/SearchResults';
 import MovieDetail from '@/pages/MovieDetail/MovieDetail';
 import PrivateLayout from '@/layouts/PrivateLayout';
 import Spinner from '@/components/Spinner/Spinner';
@@ -32,6 +33,7 @@ export default function AppRoutes() {
         <Route element={<PrivateLayout />}>
           <Route path="/home" element={<Home />} />
           <Route path="/movie/:id" element={<MovieDetail />} />
+          <Route path="/search" element={<SearchResults />} />
         </Route>
       </Route>
 

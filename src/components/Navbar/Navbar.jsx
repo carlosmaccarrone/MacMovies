@@ -3,6 +3,7 @@ import { useAuth } from '@/contexts/AuthContext';
 import Select from "@/components/Select/Select";
 import { useNavigate } from 'react-router-dom';
 import Logo from '@/components/Logo';
+import { useState } from "react";
 
 const genres = [
   { value: "28", name: "Action" },
@@ -28,10 +29,18 @@ const genres = [
 
 const Navbar = () => {
   const navigate = useNavigate();
-  const { logout } = useAuth();  
+  const { logout } = useAuth();
+  const [search, setSearch] = useState("");  
 
   const handleGenreSelect = (genre) => {
     navigate(`/home?genre=${genre.value}`);
+  };
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    if (search.trim()) {
+      navigate(`/search?query=${encodeURIComponent(search.trim())}`);
+    }
   };
 
   return (
@@ -57,14 +66,16 @@ const Navbar = () => {
         />
       </nav>
 
-      <div className={styles.searchContainer}>
-        <button className={styles.searchButton}>🔍</button>
+      <form className={styles.searchContainer} onSubmit={handleSearch}>
+        <button type="submit" className={styles.searchButton}>🔍</button>
         <input
           type="text"
           placeholder="Search any movie you want"
           className={styles.searchInput}
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
         />
-      </div>
+      </form>
 
       <div className={styles.userControls}>
         <button className={styles.userButton}>USER</button>      
