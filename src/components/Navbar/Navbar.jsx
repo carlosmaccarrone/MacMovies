@@ -40,6 +40,7 @@ const Navbar = () => {
     e.preventDefault();
     if (search.trim()) {
       navigate(`/search?query=${encodeURIComponent(search.trim())}`);
+      setSearch("");
     }
   };
 
