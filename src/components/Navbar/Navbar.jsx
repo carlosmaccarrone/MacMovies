@@ -44,6 +44,11 @@ const Navbar = () => {
     }
   };
 
+  const handleLogout = () => {
+    navigate("/goodbye");
+    setTimeout(() => logout(), 2000);
+  };
+
   return (
     <header className={styles.navbar}>
       <div className={styles.logoSection}>
@@ -80,7 +85,7 @@ const Navbar = () => {
 
       <div className={styles.userControls}>
         <button className={styles.userButton}>USER</button>      
-        <button className={styles.logoutButton} onClick={() => logout()}>LOGOUT</button>
+        <button className={styles.logoutButton} onClick={() => handleLogout()}>LOGOUT</button>
       </div>
     </header>
   );
