@@ -1,31 +1,64 @@
 import styles from "@/components/Navbar/Navbar.module.css";
-import GenreSelect from "@/components/Navbar/GenreSelect";
+import { useAuth } from '@/contexts/AuthContext';
+import Select from "@/components/Select/Select";
+import { useNavigate } from 'react-router-dom';
 import Logo from '@/components/Logo';
 
 const genres = [
   { value: "28", name: "Action" },
+  { value: "12", name: "Adventure" },
+  { value: "16", name: "Animation" },
   { value: "35", name: "Comedy" },
+  { value: "80", name: "Crime" },
+  { value: "99", name: "Documentary" },
+  { value: "18", name: "Drama" },
+  { value: "10751", name: "Family" },
+  { value: "14", name: "Fantasy" },
+  { value: "36", name: "History" },
+  { value: "27", name: "Horror" },
+  { value: "10402", name: "Music" },
+  { value: "9648", name: "Mystery" },
+  { value: "10749", name: "Romance" },
+  { value: "878", name: "Sci-Fi" },
+  { value: "10770", name: "TV Movie" },
+  { value: "53", name: "Thriller" },
+  { value: "10752", name: "War" },
+  { value: "37", name: "Western" },
 ];
 
 const Navbar = () => {
+  const navigate = useNavigate();
+  const { logout } = useAuth();  
+
+  const handleGenreSelect = (genre) => {
+    navigate(`/home?genre=${genre.value}`);
+  };
+
   return (
     <header className={styles.navbar}>
-
       <div className={styles.logoSection}>
         <Logo width="170px" />
         <span className={styles.provider}>Movie data provided by TMDb</span>
       </div>
 
       <nav className={styles.navLinks}>
-        <button className={styles.navButton}>HOME</button>
+        <button
+          className={styles.navButton}
+          onClick={() => navigate("/home")}
+        >
+          HOME
+        </button>
 
-        <GenreSelect className={styles.genreSelect} genres={genres} />
+        <Select
+          className={styles.genreSelect}
+          options={genres}
+          placeholder="GENRE"
+          onSelect={(genre) => { handleGenreSelect(genre) }}
+        />
       </nav>
 
       <div className={styles.searchContainer}>
-        <button className={styles.searchButton}>
-          🔍
-        </button>        
+        <button className={styles.searchButton}>🔍</button>
         <input
           type="text"
           placeholder="Search any movie you want"
@@ -35,10 +68,10 @@ const Navbar = () => {
 
       <div className={styles.userControls}>
         <button className={styles.userButton}>USER</button>      
-        <button className={styles.logoutButton}>LOGOUT</button>
+        <button className={styles.logoutButton} onClick={() => logout()}>LOGOUT</button>
       </div>
     </header>
   );
-}
+};
 
-export default Navbar; 
+export default Navbar;

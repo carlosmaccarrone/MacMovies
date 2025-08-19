@@ -1,4 +1,4 @@
-import styles from '@/pages/Home/TrendingMoviesGrid.module.css';
+import styles from '@/pages/Home/MoviesGrid.module.css';
 import { Link } from 'react-router-dom';
 
 const MovieCard = ({ movie }) => {
@@ -19,7 +19,7 @@ const MovieCard = ({ movie }) => {
   );
 };
 
-const TrendingMoviesGrid = ({ movies }) => {
+const MoviesGrid = ({ movies }) => {
   if (!movies || movies.length === 0) return null;
   return (
     <ul className={styles.movieGrid}>
@@ -30,4 +30,4 @@ const TrendingMoviesGrid = ({ movies }) => {
   );
 };
 
-export default TrendingMoviesGrid;
+export default MoviesGrid;

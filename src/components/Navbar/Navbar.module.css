@@ -70,8 +70,8 @@
   border-radius: 12px;
   padding: 0.25rem 0.5rem;
   min-width: 200px;
-  flex: 1 1 auto;              /* crece en el espacio disponible */
-  max-width: 400px;            /* opcional */
+  flex: 1 1 auto;              /* grows in the available space */
+  max-width: 400px;            /* optional */
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -87,8 +87,8 @@
   
   flex: 1 1 auto;
   min-width: 0;
-  box-sizing: border-box;       /* clave para Chrome/Edge */
-  -webkit-appearance: none;     /* quita estilos nativos */
+  box-sizing: border-box;       /* key for Chrome/Edge */
+  -webkit-appearance: none;     /* remove native styles */
 }
 
 .searchInput::placeholder {

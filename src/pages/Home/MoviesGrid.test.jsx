@@ -1,4 +1,4 @@
-import TrendingMoviesGrid from '@/pages/Home/TrendingMoviesGrid';
+import MoviesGrid from '@/pages/Home/MoviesGrid';
 import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 
@@ -19,11 +19,11 @@ afterAll(() => {
   console.warn = originalWarn;
 });
 
-describe('TrendingMoviesGrid component', () => {
+describe('MoviesGrid component', () => {
   test('renders nothing if movies array is empty', () => {
     const { container } = render(
       <MemoryRouter>
-        <TrendingMoviesGrid movies={[]} />
+        <MoviesGrid movies={[]} />
       </MemoryRouter>
     );
     expect(container.firstChild).toBeNull();
@@ -32,7 +32,7 @@ describe('TrendingMoviesGrid component', () => {
   test('renders the correct number of movie cards', () => {
     render(
       <MemoryRouter>
-        <TrendingMoviesGrid movies={sampleMovies} />
+        <MoviesGrid movies={sampleMovies} />
       </MemoryRouter>
     );
     const cards = screen.getAllByRole('listitem');
@@ -42,7 +42,7 @@ describe('TrendingMoviesGrid component', () => {
   test('renders movie details correctly', () => {
     render(
       <MemoryRouter>
-        <TrendingMoviesGrid movies={sampleMovies} />
+        <MoviesGrid movies={sampleMovies} />
       </MemoryRouter>
     );
     

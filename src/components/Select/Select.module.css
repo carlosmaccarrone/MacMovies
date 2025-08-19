@@ -27,14 +27,26 @@
 
 .options {
   position: absolute;
-  top: 100%;
-  left: 0;
+  top: calc(100% - 4px);
+/*  top: 100%;*/
+  left: -15%;
   right: 0; /* occupies the entire width of the container */
   background-color: rgba(0,0,0,0.9);
   border-radius: 12px;
   margin-top: 0.25rem;
-  overflow: hidden;
+/*  overflow: hidden;*/
   z-index: 20;
+  overflow-y: auto;      /* enable vertical scrolling */
+  max-height: 280px;     /* sdjusts the maximum height of the dropdown */  
+/*  scrollbar-width: none; *//* Firefox */
+/*  -ms-overflow-style: none;*/ /* IE 10+ */
+  width: max-content;      /* fits longer content */
+  min-width: 100%;         /* never less than the width of the button */
+  scrollbar-width: none; 
+}
+
+.options::-webkit-scrollbar {
+  display: none; /* Chrome, Edge, Safari */
 }
 
 .option {
