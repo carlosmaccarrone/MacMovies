@@ -183,6 +183,7 @@
     gap: 0.5rem;
     align-items: center;         /* so that the buttons align with the logo */
     margin-top: -2rem;
+    margin-right: 0.5rem;
   }
 
   .navButton {
