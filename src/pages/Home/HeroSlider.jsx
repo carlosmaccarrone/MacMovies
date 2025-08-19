@@ -26,13 +26,17 @@ const HeroSlider = ({ movies }) => {
 
   return (
     <div className={styles.hero}>
-      {topMovie.backdrop_path && (
+      {topMovie.backdrop_path ? (
         <img
           src={`https://image.tmdb.org/t/p/w1280${topMovie.backdrop_path}`}
           alt={topMovie.title}
           className={styles.heroImage}
           onLoad={() => setImageLoaded(true)}
         />
+      ) : (
+        <div className={styles.heroPlaceholder}>
+          <span>No image available</span>
+        </div>
       )}
 
       <div className={styles.heroText}>
