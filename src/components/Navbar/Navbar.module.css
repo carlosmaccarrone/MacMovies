@@ -163,23 +163,26 @@
 
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;         /* now everything is in line */
+    align-items: center;         /* center vertically */
+    justify-content: space-between;
+    flex-wrap: wrap;             /* allows the search bar to go down */
     padding: 1rem;
   }
 
   .logoSection {
     order: 1;
-    margin-bottom: 0.5rem;
+    display: flex;
     align-items: center;
+    gap: 0.5rem;
   }
 
   .navLinks {
-    order: 3;
-    margin: 0.5rem 0;
-    justify-content: center;
-    gap: 1rem;
-    width: 100%;
+    order: 2;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;         /* so that the buttons align with the logo */
+    margin-top: -2rem;
   }
 
   .navButton {
@@ -197,6 +200,8 @@
     /*transform: translateX(1.5px);*/
     transform: translateX(-0.15rem);
     font-size: 1rem !important;  
+    position: absolute;
+    z-index: 999; 
   }
 
   .navButton {
@@ -210,10 +215,9 @@
   }
 
   .searchContainer {
-    order: 2;
-    width: 90%;
-    margin-bottom: 0;
-    height: 2rem; 
+    order: 4;                     /* below all */
+    width: 100%;
+    margin-top: 0rem;
   }
 
   .searchInput {
@@ -227,9 +231,10 @@
 
   .userControls {
     order: 3;
-    justify-content: center;
-    gap: 1rem;
-    width: 100%;
-    margin-bottom: 0;    
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;                 /* take up the whole row below if you want */
+    justify-content: flex-end;
+    margin-top: -2.5rem;          /* space above the search bar */
   }
 }
