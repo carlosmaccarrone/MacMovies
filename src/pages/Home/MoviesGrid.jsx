@@ -5,12 +5,16 @@ const MovieCard = ({ movie }) => {
   const { poster_path, title, release_date, id } = movie;
   return (
     <li className={styles.movieCard}>
-      <Link to={`/movie/${id}`} state={{ movie }}> {/* pasamos movie por state */}
-        {poster_path && (
+      <Link to={`/movie/${id}`} state={{ movie }}>
+        {poster_path ? (
           <img
             src={`https://image.tmdb.org/t/p/w185${poster_path}`}
             alt={title}
           />
+        ) : (
+          <div className={styles.posterPlaceholder}>
+            <span>No Image</span>
+          </div>
         )}
         <h3>{title}</h3>
         <p>{release_date?.split('-')[0]}</p>
