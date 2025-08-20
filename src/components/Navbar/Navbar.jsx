@@ -3,7 +3,7 @@ import { useAuth } from '@/contexts/AuthContext';
 import Select from "@/components/Select/Select";
 import { useNavigate } from 'react-router-dom';
 import Logo from '@/components/Logo';
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 const genres = [
   { value: "28", name: "Action" },
