@@ -30,7 +30,8 @@ const genres = [
 const Navbar = () => {
   const navigate = useNavigate();
   const { logout } = useAuth();
-  const [search, setSearch] = useState("");  
+  const [search, setSearch] = useState("");
+  const inputRef = useRef(null);
 
   const handleGenreSelect = (genre) => {
     navigate(`/home?genre=${genre.value}`);
@@ -41,6 +42,10 @@ const Navbar = () => {
     if (search.trim()) {
       navigate(`/search?query=${encodeURIComponent(search.trim())}`);
       setSearch("");
+
+      if (inputRef.current) {
+        inputRef.current.blur();
+      }      
     }
   };
 

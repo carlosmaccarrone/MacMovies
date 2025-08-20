@@ -7,19 +7,26 @@ A minimal React app demo by **Carlos Maccarrone**.
 
 ## Overview
 
-MacMovies is a lightweight React application demonstrating a functional login system and user management simulation.  
-It uses modern JavaScript and frontend best practices to showcase clean architecture and modular design.
+MacMovies is a lightweight React application that combines simulated authentication with real movie exploration.
+The flow starts with a functional login, and once authenticated, the user can access a navigation bar with the following sections:
 
-At the moment, the app contains a **functional login page** that fetches user data from `/public/users.json` to simulate a backend.  
-Passwords are stored as hashes, and verification is done by comparing `hash == hash` like a backend-based authentication system.  
-A React **context** is used to manage session and user state.
+- Home
+- Genre
+- News
+- Search
+- Logout
+
+All movie-related content (posters, metadata, reviews) is dynamically fetched from a real backend through the TMDb API.
+Session management is handled with React context, ensuring a clean and predictable global state.
 
 ## Features
 
 - Functional login page with session management via React context
-- User data fetched from a local JSON file (`/public/users.json`)
+- User data fetched from a local JSON file (/public/users.json) to simulate backend authentication
 - Backend based password verification with hashed values
+- Movie data (posters, metadata, reviews) dynamically fetched from a real backend (TMDb API)
 - Modular CSS using **CSS Modules** (`style-loader` + `css-loader`)
+- Jest testing suite configured for ESM modules, with mocks and fixtures to simulate components and routes
 - Fully ESM-based project structure
 
 ## Technologies Used
