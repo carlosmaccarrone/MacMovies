@@ -80,6 +80,7 @@ const Navbar = () => {
       <form className={styles.searchContainer} onSubmit={handleSearch}>
         <button type="submit" className={styles.searchButton}>🔍</button>
         <input
+          ref={inputRef}
           type="text"
           placeholder="Search any movie you want"
           className={styles.searchInput}
