@@ -1,13 +1,13 @@
 .container {
   display: flex;
-  flex-direction: column; /* móvil: poster arriba, detalles abajo */
+  flex-direction: column;
   gap: 2rem;
   padding: 2rem;
-  margin-top: 12rem;  /* espacio para navbar en mobile */
+  margin-top: 12rem;  /* mobile navbar space */
   align-items: center;
   overflow-y: auto;
-  overflow-x: hidden; 
-  scrollbar-width: none;
+  overflow-x: hidden;
+  width: 83%; 
 }
 
 .container::-webkit-scrollbar {
@@ -63,6 +63,25 @@
   margin-left: 1.5rem;
 }
 
+.trailerButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  background-color: #FFD54F;
+  color: #000;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  transition: background 0.3s;
+  width: 120px;
+}
+
+.trailerButton:hover {
+  background-color: #ffc107;
+}
+
 @media (min-width: 768px) {
   .container {
     flex-direction: row;
@@ -70,9 +89,10 @@
     justify-content: flex-start;
     gap: 2rem;
     padding: 3rem;
-    margin-top: 6rem;  /* espacio para que la navbar no tape */
-    max-height: calc(100vh - 6rem); /* importante para que aparezca scrollbar */    
-    overflow-y: auto;    
+    margin-top: 6rem;
+    max-height: calc(100vh - 6rem); /* scrollbar */
+    overflow-y: auto;
+    width: 92%;
   }
 }
 

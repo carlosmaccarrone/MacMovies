@@ -24,7 +24,7 @@ describe("Navbar", () => {
 
     expect(screen.getByAltText(/MacMovies Logo/i)).toBeInTheDocument();
     expect(screen.getByText("HOME")).toBeInTheDocument();
-    expect(screen.getByText("USER")).toBeInTheDocument();
+    expect(screen.getByText("NEWS")).toBeInTheDocument();
     expect(screen.getByText("LOGOUT")).toBeInTheDocument();
     expect(screen.getByPlaceholderText(/Search any movie/i)).toBeInTheDocument();
     expect(screen.getByText("🔍")).toBeInTheDocument();
@@ -41,7 +41,7 @@ describe("Navbar", () => {
     );
 
     expect(screen.getByText("HOME")).toBeInTheDocument();
-    expect(screen.getByText("USER")).toBeInTheDocument();
+    expect(screen.getByText("NEWS")).toBeInTheDocument();
     expect(screen.getByText("LOGOUT")).toBeInTheDocument();
   });
 });

@@ -14,6 +14,7 @@ const { default: SearchResults } = await import('@/pages/SearchResults/SearchRes
 
 describe("SearchResults basic smoke tests", () => {
   let consoleErrorSpy;
+  let consoleWarnSpy;
 
   beforeAll(() => {
     consoleErrorSpy = jest.spyOn(console, "error").mockImplementation(() => {});
@@ -22,6 +23,7 @@ describe("SearchResults basic smoke tests", () => {
 
   afterAll(() => {
     consoleErrorSpy.mockRestore();
+    consoleWarnSpy.mockRestore();
   });  
 
   test("renders without exploding", () => {

@@ -16,6 +16,23 @@ body, #root {
   color: #fff;
   font-family: Arial, sans-serif;
   position: relative;       /* needed for pseudo-element */
+
+  scrollbar-width: thin !important;
+  scrollbar-color: rgba(255, 213, 79, 0.5) rgba(255, 255, 255, 0.05) !important;    
+}
+
+.body::-webkit-scrollbar {
+  width: 6px !important;
+}
+
+.body::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05) !important; 
+  border-radius: 3px !important;
+}
+
+.body::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 213, 79, 0.5) !important; 
+  border-radius: 3px !important;
 }
 
 body::before {

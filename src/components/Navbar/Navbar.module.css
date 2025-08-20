@@ -115,7 +115,7 @@
 }
 
 .navButton,
-.userButton,
+.newsButton,
 .logoutButton {
   background: transparent;
   border: none;
@@ -127,7 +127,7 @@
   transition: all 0.2s;
 }
 
-.userButton,
+.newsButton,
 .logoutButton {
   border: 2px solid #FFD54F;
   border-radius: 12px;      
@@ -143,12 +143,12 @@
   color: #FF5733;
 }
 
-.userButton:hover,
-.userButton:active {
+.newsButton:hover,
+.newsButton:active {
   border-color: #FF5733;
 }
 
-.userButton:active {
+.newsButton:active {
   color: #FF5733;
 }
 
@@ -210,7 +210,7 @@
   }
 
   .navButton,
-  .userButton,
+  .newsButton,
   .logoutButton {
     font-size: 1rem;
   }

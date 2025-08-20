@@ -1,0 +1,121 @@
+.newsContainer {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Varela Round', sans-serif;
+  margin-top: 6rem;
+  overflow-y: auto;
+  width: 96.5%;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #FFD54F;
+}
+
+.spinnerContainer {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.movieBox {
+  display: flex;
+  gap: 15px;
+  width: 90%;
+  max-width: 900px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  color: #FFD54F;
+  align-items: flex-start;
+}
+
+.poster {
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+
+.details {
+  flex: 1;
+  max-height: 300px;
+  overflow-y: auto; 
+}
+
+.movieTitle {
+  margin: 0 0 10px 0;
+  font-size: 1.5rem;
+}
+
+.overview {
+  margin: 0 0 5px 0;
+  line-height: 1.4;
+}
+
+.releaseDate {
+  color: #FFD54F;
+  opacity: 0.8;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.trailerButton {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #FFD54F;
+  color: #000;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.trailerButton:hover {
+  background-color: #ffc107;
+}
+
+.review {
+  margin-top: 5px;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #ffd54f;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .newsContainer {
+    overflow-y: auto;
+    margin-top: 12rem;
+    width: 90%;
+  }
+
+  .movieBox {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .poster {
+    width: 150px;
+    margin-bottom: 10px;
+  }
+
+  .movieTitle {
+    font-size: 1.2rem;
+  }
+
+  .overview {
+    font-size: 0.95rem;
+  }
+
+  .releaseDate {
+    font-size: 0.85rem;
+  }
+
+  .trailerButton {
+    margin-top: 8px;
+  }
+}

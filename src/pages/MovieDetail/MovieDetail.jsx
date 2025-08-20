@@ -10,6 +10,7 @@ const MovieDetail = ({ movieProp, fetchMovie = fetchFromTMDb, skipImageLoad }) =
 
   const [movie, setMovie] = useState(skipImageLoad ? movieProp : null);
   const [loading, setLoading] = useState(skipImageLoad ? false : true);
+  const [trailerKey, setTrailerKey] = useState(null);
 
   useEffect(() => {
     if (!movieFromState?.id) return;
@@ -28,6 +29,14 @@ const MovieDetail = ({ movieProp, fetchMovie = fetchFromTMDb, skipImageLoad }) =
           director,
           cast: data.credits?.cast?.slice(0, 10).map(c => c.name),
         });
+
+        // fetch trailer
+        const videosData = await fetchMovie(`movie/${movieFromState.id}/videos`);
+        const trailer = videosData.results.find(
+          (v) => v.type === "Trailer" && v.site === "YouTube"
+        );
+        setTrailerKey(trailer?.key || null);
+
       } catch (error) {
         console.error("Error fetching movie details:", error);
       } finally {
@@ -50,6 +59,16 @@ const MovieDetail = ({ movieProp, fetchMovie = fetchFromTMDb, skipImageLoad }) =
       <div className={styles.details}>
         <h1 className={styles.title}>{movie.title}</h1>
         <p className={styles.overview}>{movie.overview}</p>
+        {trailerKey && (
+          <a
+            href={`https://www.youtube.com/watch?v=${trailerKey}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.trailerButton}
+          >
+            Watch Trailer
+          </a>
+        )}
         <p><strong>Release Date:</strong> {movie.release_date}</p>
         <p><strong>Rating:</strong> {movie.vote_average}/10</p>
         <p><strong>Runtime:</strong> {movie.runtime} min</p>

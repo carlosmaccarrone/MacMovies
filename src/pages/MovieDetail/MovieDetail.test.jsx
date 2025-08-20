@@ -26,8 +26,11 @@ const baseMovie = {
 };
 
 describe("MovieDetail Component", () => {
+  let consoleErrorSpy;
+  let consoleWarnSpy;
+
   beforeAll(() => {
-    // mock Image for immediate loading
+    // mock Image para que onload se llame inmediatamente
     const OriginalImage = global.Image;
     global.Image = class {
       onload = null;
@@ -36,11 +39,18 @@ describe("MovieDetail Component", () => {
       }
     };
     global._OriginalImage = OriginalImage;
+
+    // spy en consola para silenciar errores/warnings
+    consoleErrorSpy = jest.spyOn(console, "error").mockImplementation(() => {});
+    consoleWarnSpy = jest.spyOn(console, "warn").mockImplementation(() => {});
   });
 
   afterAll(() => {
     global.Image = global._OriginalImage;
     delete global._OriginalImage;
+
+    consoleErrorSpy.mockRestore();
+    consoleWarnSpy.mockRestore();
   });
 
   test("shows spinner while loading", async () => {

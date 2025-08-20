@@ -7,6 +7,7 @@ import { useAuth } from '@/contexts/AuthContext';
 import Goodbye from '@/pages/Goodbye/Goodbye';
 import Login from '@/pages/Login/Login';
 import Home from '@/pages/Home/Home';
+import News from '@/pages/News/News';
 
 function AuthRoute({ checkAuth, redirectTo }) {
   const { isLogged, loading } = useAuth();
@@ -35,6 +36,7 @@ export default function AppRoutes() {
           <Route path="/home" element={<Home />} />
           <Route path="/movie/:id" element={<MovieDetail />} />
           <Route path="/search" element={<SearchResults />} />
+          <Route path="/news" element={<News />} />
           <Route path="/goodbye" element={<Goodbye />} />
         </Route>
       </Route>

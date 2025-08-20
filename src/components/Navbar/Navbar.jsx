@@ -84,7 +84,7 @@ const Navbar = () => {
       </form>
 
       <div className={styles.userControls}>
-        <button className={styles.userButton}>USER</button>      
+        <button className={styles.newsButton} onClick={() => navigate("/news")}>NEWS</button>      
         <button className={styles.logoutButton} onClick={() => handleLogout()}>LOGOUT</button>
       </div>
     </header>

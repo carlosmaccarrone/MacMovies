@@ -16,6 +16,7 @@ const { default: Home } = await import('@/pages/Home/Home');
 
 describe("Home Tests", () => {
   let consoleErrorSpy;
+  let consoleWarnSpy;
 
   beforeAll(() => {
     consoleErrorSpy = jest.spyOn(console, "error").mockImplementation(() => {});
@@ -24,6 +25,7 @@ describe("Home Tests", () => {
 
   afterAll(() => {
     consoleErrorSpy.mockRestore();
+    consoleWarnSpy.mockRestore();
   });  
 
   test("renders HeroSlider and MoviesGrid when movies are passed", async () => {

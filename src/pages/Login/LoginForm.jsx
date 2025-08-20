@@ -48,7 +48,7 @@ const LoginForm = () => {
         <Logo width="260px" />
         <h2 className={styles.title}>Welcome Back</h2>
 
-        <form className={styles.form} onSubmit={handleLogin}>
+        <form className={styles.form} onSubmit={handleLogin} data-testid="login-form">
           <input
             type="text"
             placeholder="Username"
