@@ -28,6 +28,7 @@ const Select = ({ options, placeholder = "Select...", className, onSelect }) => 
       ref={containerRef}
       className={`${styles.container} ${className}`}
       onMouseLeave={() => setOpen(false)}
+      onMouseEnter={() => setOpen(true)}
     >
       <div className={styles.selected} onClick={toggleOpen}>
         {placeholder} <span className={styles.arrow}>▾</span>
