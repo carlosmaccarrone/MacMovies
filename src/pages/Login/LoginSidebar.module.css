@@ -12,7 +12,9 @@
   box-shadow: 0 8px 30px rgba(0,0,0,0.5);
   color: #fff;
   max-height: 90vh;
-
+  min-width: 0;
+  overflow-x: hidden; 
+  overflow-y: hidden;
   box-sizing: border-box;
   margin: 0;
 }
@@ -96,6 +98,7 @@
   50% { transform: translateY(4px); }
 }
 
+
 .footerNote {
   margin-top: 0.2rem;
   font-size: 0.85rem;
@@ -108,9 +111,30 @@
   margin-right: auto;
   padding: 0 0.5rem;
   white-space: pre-line;
+  padding: 0 0.5rem 1rem;
+/*  height: auto;*/
+  max-height: 30vh;
+  overflow-y: auto;
+
+  white-space: pre-line;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+
+  max-width: 100%;
+  box-sizing: border-box;
+
   /* Force GPU compositing to avoid flicker */
   transform: translateZ(0);
   will-change: transform;
+}
+
+@media (min-width: 1280px)  {
+  .footerNote {
+    max-height: none;
+    overflow-y: visible;
+  }
 }
 
 @media (max-width: 768px) {
